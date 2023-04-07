@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-suite_changePass" class="navigator-link">
+              <span class="suite-name border-failed">suite changePass</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-suite_changePass" class="navigator-link ">
+                    <span>E:\daoneeclipse\fastfoode\src\test\changepass.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-suite_changePass" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-suite_changePass" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-suite_changePass" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-suite_changePass" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-suite_changePass" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-suite_changePass" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">75 methods, 6 failed,   69 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suite_changePass" class="hide-methods failed suite-suite_changePass"> (hide)</a> <!-- hide-methods failed suite-suite_changePass -->
+                      <a href="#" panel-name="suite-suite_changePass" class="show-methods failed suite-suite_changePass"> (show)</a> <!-- show-methods failed suite-suite_changePass -->
+                    </span>
+                    <div class="method-list-content failed suite-suite_changePass">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA7, , cuongcuongA7, , cuongcuongA7, )">testChangePass(cuongcuongA7, , cuongcuongA7, , cuongcuongA7, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(Customer28, PassCurrent incorrect, Customer12345, , Customer12345, )">testChangePass(Customer28, PassCurrent incorrect, Customer12345, , Customer12345, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(Customer28, , Customer12345, , Customer12345, )">testChangePass(Customer28, , Customer12345, , Customer12345, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, , , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">testChangePass(, , , NewPass cann't be empty, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)">testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)">testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suite_changePass -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suite_changePass" class="hide-methods passed suite-suite_changePass"> (hide)</a> <!-- hide-methods passed suite-suite_changePass -->
+                      <a href="#" panel-name="suite-suite_changePass" class="show-methods passed suite-suite_changePass"> (show)</a> <!-- show-methods passed suite-suite_changePass -->
+                    </span>
+                    <div class="method-list-content passed suite-suite_changePass">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, NewPass has to low...)">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to low...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, asdf, NewPass has to bigger 6 character, , Confirm cann&#039;t be empty)">testChangePass(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, , Confirm cann...)">testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, , Confirm cann...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(asdf, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, asdf, Confirm has to bigger ...)">testChangePass(asdf, PassCurrent has to bigger 6 character, , NewPass cann't be empty, asdf, Confirm has to bigger ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, as df, Confi...)">testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, as df, Confi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongÁ 7, Confirm malformed. Phải có ...)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongÁ 7, Confirm malformed. Phải có ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, a df#, Confirm has to bigge...)">testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, a df#, Confirm has to bigge...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, asdf, NewPass has to bigger 6 character, asdf, Confirm has to bigger ...)">testChangePass(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, asdf, Confirm has to bigger ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuo...)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, a df#, NewPass has to bigger 6 character, a df#, Confirm has to bigge...)">testChangePass(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, a df#, Confirm has to bigge...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongcuongcuong cuongcuongcuongcuongc...)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, , Confirm ca...)">testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, , Confirm ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA7, , , NewPass cann&#039;t be empty, cuongcuongA7, )">testChangePass(cuongcuongA7, , , NewPass cann't be empty, cuongcuongA7, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, as df, Confirm has to bigger 6 character)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, as df, Confirm has to bigger 6 character)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongcuongcuongcuongcuongcuongcuongcu...)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, , Confirm cann&#039;...)">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm cann'...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongA ...)">testChangePass(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongA ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, as df, NewPass has to bigger 6 character, , Confirm cann&#039;t be empty)">testChangePass(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongA7, )">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA7, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA7, , cuongcuongA7, )">testChangePass(, PassCurrent cann't be empty, cuongcuongA7, , cuongcuongA7, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, NewPass has to low...)">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to low...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA7, , , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">testChangePass(cuongcuongA7, , , NewPass cann't be empty, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, as df, Confirm has to bigge...)">testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, as df, Confirm has to bigge...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, , Confirm ca...)">testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, , Confirm ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, , Confirm ca...)">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, a df#, Confirm has to bigger 6 character)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, a df#, Confirm has to bigger 6 character)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, cuongcuong, Con...)">testChangePass(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, cuongcuong, Con...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, , Confirm cann&#039;...)">testChangePass(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, , Confirm cann'...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)">testChangePass(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA7, , cuongcuongA7, , , Confirm cann&#039;t be empty)">testChangePass(cuongcuongA7, , cuongcuongA7, , , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, cuongcuong, Con...)">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuong, Con...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, cuongcuongÁ ...)">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongÁ ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuong, Confirm malformed. Phải có chữ...)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuong, Confirm malformed. Phải có chữ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongA 7, Confirm malformed. Phải có ...)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA 7, Confirm malformed. Phải có ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)">testChangePass(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, , Confirm ca...)">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm ca...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, a df#, Confi...)">testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, a df#, Confi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, cuongcuongA ...)">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongA ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, asdf, Confirm ...)">testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, asdf, Confirm ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA7, , , Confirm cann&#039;t be empty)">testChangePass(, PassCurrent cann't be empty, cuongcuongA7, , , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, asdf, Confirm has to bigger 6 character)">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, asdf, Confirm has to bigger 6 character)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongÁ ...)">testChangePass(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongÁ ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, as df, NewPass has to bigger 6 character, as df, Confirm has to bigge...)">testChangePass(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, as df, Confirm has to bigge...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-suite_changePass" title="test.ApplicationFastFood" class="method navigator-link" hash-for-method="testChangePass(, PassCurrent cann&#039;t be empty, a df#, NewPass has to bigger 6 character, , Confirm cann&#039;t be empty)">testChangePass(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, , Confirm cann't be empty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suite_changePass -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suite_changePass" class="panel suite_changePass">
+          <div class="suite-suite_changePass-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.ApplicationFastFood</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA7, , cuongcuongA7, , cuongcuongA7, )">
+                  </a> <!-- testChangePass(cuongcuongA7, , cuongcuongA7, , cuongcuongA7, ) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA7, , cuongcuongA7, , cuongcuongA7, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;fastfood.entity.User.getUser()&quot; because &quot;fastfood.util.Authention.authention&quot; is null
+	at test.ApplicationFastFood.getChangePassword(ApplicationFastFood.java:4629)
+	at test.ApplicationFastFood.btnChangePassActionPerformed(ApplicationFastFood.java:3509)
+	at test.ApplicationFastFood$35.actionPerformed(ApplicationFastFood.java:1689)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+	at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5264)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(Customer28, PassCurrent incorrect, Customer12345, , Customer12345, )">
+                  </a> <!-- testChangePass(Customer28, PassCurrent incorrect, Customer12345, , Customer12345, ) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(Customer28, PassCurrent incorrect, Customer12345, , Customer12345, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;fastfood.entity.User.getUser()&quot; because &quot;fastfood.util.Authention.authention&quot; is null
+	at test.ApplicationFastFood.getChangePassword(ApplicationFastFood.java:4629)
+	at test.ApplicationFastFood.btnChangePassActionPerformed(ApplicationFastFood.java:3509)
+	at test.ApplicationFastFood$35.actionPerformed(ApplicationFastFood.java:1689)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+	at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5264)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(Customer28, , Customer12345, , Customer12345, )">
+                  </a> <!-- testChangePass(Customer28, , Customer12345, , Customer12345, ) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(Customer28, , Customer12345, , Customer12345, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;fastfood.entity.User.getUser()&quot; because &quot;fastfood.util.Authention.authention&quot; is null
+	at test.ApplicationFastFood.getChangePassword(ApplicationFastFood.java:4629)
+	at test.ApplicationFastFood.btnChangePassActionPerformed(ApplicationFastFood.java:3509)
+	at test.ApplicationFastFood$35.actionPerformed(ApplicationFastFood.java:1689)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+	at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+	at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5264)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, , , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(, , , NewPass cann't be empty, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, , , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [] but found [PassCurrent cann&apos;t be empty]
+	at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5265)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)">
+                  </a> <!-- testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Confirm)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [PassCurrent incorrect] but found [Cannot invoke &quot;fastfood.entity.User.getPass()&quot; because &quot;fastfood.util.Authention.authention&quot; is null]
+	at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5265)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)">
+                  </a> <!-- testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Confirm)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [PassCurrent incorrect] but found [Cannot invoke &quot;fastfood.entity.User.getPass()&quot; because &quot;fastfood.util.Authention.authention&quot; is null]
+	at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5265)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_changePass-class-failed -->
+          <div class="suite-suite_changePass-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.ApplicationFastFood</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower 40 character, cuongcuongcuongcuong cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, NewPass has to low...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to low...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to lower 40 character, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, asdf, NewPass has to bigger 6 character, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)">
+                  </a> <!-- testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongA 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, , Confirm cann...)">
+                  </a> <!-- testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, , Confirm cann...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)">
+                  </a> <!-- testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(asdf, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, asdf, Confirm has to bigger ...)">
+                  </a> <!-- testChangePass(asdf, PassCurrent has to bigger 6 character, , NewPass cann't be empty, asdf, Confirm has to bigger ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(asdf, PassCurrent has to bigger 6 character, , NewPass cann't be empty, asdf, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to lower 40 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, as df, Confi...)">
+                  </a> <!-- testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, as df, Confi...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, as df, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongÁ 7, Confirm malformed. Phải có ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongÁ 7, Confirm malformed. Phải có ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongÁ 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, a df#, Confirm has to bigge...)">
+                  </a> <!-- testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, a df#, Confirm has to bigge...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, a df#, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, asdf, NewPass has to bigger 6 character, asdf, Confirm has to bigger ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, asdf, Confirm has to bigger ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, asdf, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuo...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuo...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, a df#, NewPass has to bigger 6 character, a df#, Confirm has to bigge...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, a df#, Confirm has to bigge...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, a df#, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongcuongcuong cuongcuongcuongcuongc...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongc...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, , Confirm ca...)">
+                  </a> <!-- testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, , Confirm ca...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA7, , , NewPass cann&#039;t be empty, cuongcuongA7, )">
+                  </a> <!-- testChangePass(cuongcuongA7, , , NewPass cann't be empty, cuongcuongA7, ) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA7, , , NewPass cann't be empty, cuongcuongA7, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, as df, Confirm has to bigger 6 character)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, as df, Confirm has to bigger 6 character) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, as df, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongcuongcuongcuongcuongcuongcuongcu...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcu...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, , Confirm cann&#039;...)">
+                  </a> <!-- testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm cann'...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 40 character, cuongcuongcuongcuongcuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongA ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongA ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongA 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower 40 character, cuongcuongcuongcuong cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, as df, NewPass has to bigger 6 character, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)">
+                  </a> <!-- testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongA7, )">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA7, ) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA7, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA7, , cuongcuongA7, )">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongA7, , cuongcuongA7, ) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongA7, , cuongcuongA7, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, NewPass has to low...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to low...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to lower 40 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)">
+                  </a> <!-- testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongÁ 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA7, , , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(cuongcuongA7, , , NewPass cann't be empty, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA7, , , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower 40 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann&#039;t be empty, as df, Confirm has to bigge...)">
+                  </a> <!-- testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, as df, Confirm has to bigge...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, as df, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, , Confirm ca...)">
+                  </a> <!-- testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, , Confirm ca...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower 40 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 40 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, , Confirm ca...)">
+                  </a> <!-- testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm ca...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, a df#, Confirm has to bigger 6 character)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, a df#, Confirm has to bigger 6 character) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, a df#, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, cuongcuong, Con...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, cuongcuong, Con...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, cuongcuong, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuong&amp; #&amp;cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to lower 40 character, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, , Confirm cann&#039;...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, , Confirm cann'...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA7, , cuongcuongA7, , , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(cuongcuongA7, , cuongcuongA7, , , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA7, , cuongcuongA7, , , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, cuongcuong, Con...)">
+                  </a> <!-- testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuong, Con...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuong, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 40 character, cuongcuongcuongcuongcuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, cuongcuongÁ ...)">
+                  </a> <!-- testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongÁ ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongÁ 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuong, Confirm malformed. Phải có chữ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuong, Confirm malformed. Phải có chữ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuong, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)">
+                  </a> <!-- testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ hoa và số, cuongcuong, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, cuongcuongA 7, Confirm malformed. Phải có ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA 7, Confirm malformed. Phải có ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, , Confirm ca...)">
+                  </a> <!-- testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm ca...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, a df#, Confi...)">
+                  </a> <!-- testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, a df#, Confi...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, a df#, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann&#039;t be empty, cuongcuongA ...)">
+                  </a> <!-- testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongA ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongA 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, asdf, Confirm ...)">
+                  </a> <!-- testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, asdf, Confirm ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, asdf, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)">
+                  </a> <!-- testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ hoa và số, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongA7, , , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongA7, , , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongA7, , , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, Confirm has to lower 40 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, , NewPass cann&#039;t be empty, asdf, Confirm has to bigger 6 character)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, asdf, Confirm has to bigger 6 character) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, , NewPass cann't be empty, asdf, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongÁ ...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongÁ ...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongÁ 7, Confirm malformed. Phải có chữ hoa và số)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, as df, NewPass has to bigger 6 character, as df, Confirm has to bigge...)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, as df, Confirm has to bigge...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, as df, Confirm has to bigger 6 character)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)">
+                  </a> <!-- testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 40 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangePass(, PassCurrent cann&#039;t be empty, a df#, NewPass has to bigger 6 character, , Confirm cann&#039;t be empty)">
+                  </a> <!-- testChangePass(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, , Confirm cann't be empty) -->
+                  <span class="method-name">testChangePass</span>
+                  <span class="parameters">(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite_changePass-class-passed -->
+        </div> <!-- panel suite_changePass -->
+        <div panel-name="test-xml-suite_changePass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\daoneeclipse\fastfoode\src\test\changepass.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;suite changePass&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;changepass&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;changepass&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.ApplicationFastFood&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- changepass --&gt;
+&lt;/suite&gt; &lt;!-- suite changePass --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suite_changePass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suite changePass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">changepass (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suite_changePass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suite changePass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">changepass</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testChangePass</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suite_changePass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suite changePass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite_changePass');
+function tableData_suite_changePass() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(75);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testChangePass')
+data.setCell(0, 2, 'test.ApplicationFastFood')
+data.setCell(0, 3, 115);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testChangePass')
+data.setCell(1, 2, 'test.ApplicationFastFood')
+data.setCell(1, 3, 89);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testChangePass')
+data.setCell(2, 2, 'test.ApplicationFastFood')
+data.setCell(2, 3, 83);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testChangePass')
+data.setCell(3, 2, 'test.ApplicationFastFood')
+data.setCell(3, 3, 83);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testChangePass')
+data.setCell(4, 2, 'test.ApplicationFastFood')
+data.setCell(4, 3, 83);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testChangePass')
+data.setCell(5, 2, 'test.ApplicationFastFood')
+data.setCell(5, 3, 82);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testChangePass')
+data.setCell(6, 2, 'test.ApplicationFastFood')
+data.setCell(6, 3, 78);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testChangePass')
+data.setCell(7, 2, 'test.ApplicationFastFood')
+data.setCell(7, 3, 78);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testChangePass')
+data.setCell(8, 2, 'test.ApplicationFastFood')
+data.setCell(8, 3, 77);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testChangePass')
+data.setCell(9, 2, 'test.ApplicationFastFood')
+data.setCell(9, 3, 77);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testChangePass')
+data.setCell(10, 2, 'test.ApplicationFastFood')
+data.setCell(10, 3, 77);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testChangePass')
+data.setCell(11, 2, 'test.ApplicationFastFood')
+data.setCell(11, 3, 76);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testChangePass')
+data.setCell(12, 2, 'test.ApplicationFastFood')
+data.setCell(12, 3, 76);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testChangePass')
+data.setCell(13, 2, 'test.ApplicationFastFood')
+data.setCell(13, 3, 76);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testChangePass')
+data.setCell(14, 2, 'test.ApplicationFastFood')
+data.setCell(14, 3, 76);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testChangePass')
+data.setCell(15, 2, 'test.ApplicationFastFood')
+data.setCell(15, 3, 76);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testChangePass')
+data.setCell(16, 2, 'test.ApplicationFastFood')
+data.setCell(16, 3, 76);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testChangePass')
+data.setCell(17, 2, 'test.ApplicationFastFood')
+data.setCell(17, 3, 76);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testChangePass')
+data.setCell(18, 2, 'test.ApplicationFastFood')
+data.setCell(18, 3, 75);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testChangePass')
+data.setCell(19, 2, 'test.ApplicationFastFood')
+data.setCell(19, 3, 75);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testChangePass')
+data.setCell(20, 2, 'test.ApplicationFastFood')
+data.setCell(20, 3, 75);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testChangePass')
+data.setCell(21, 2, 'test.ApplicationFastFood')
+data.setCell(21, 3, 74);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testChangePass')
+data.setCell(22, 2, 'test.ApplicationFastFood')
+data.setCell(22, 3, 74);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testChangePass')
+data.setCell(23, 2, 'test.ApplicationFastFood')
+data.setCell(23, 3, 74);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testChangePass')
+data.setCell(24, 2, 'test.ApplicationFastFood')
+data.setCell(24, 3, 74);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testChangePass')
+data.setCell(25, 2, 'test.ApplicationFastFood')
+data.setCell(25, 3, 74);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testChangePass')
+data.setCell(26, 2, 'test.ApplicationFastFood')
+data.setCell(26, 3, 74);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testChangePass')
+data.setCell(27, 2, 'test.ApplicationFastFood')
+data.setCell(27, 3, 74);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testChangePass')
+data.setCell(28, 2, 'test.ApplicationFastFood')
+data.setCell(28, 3, 74);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testChangePass')
+data.setCell(29, 2, 'test.ApplicationFastFood')
+data.setCell(29, 3, 73);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testChangePass')
+data.setCell(30, 2, 'test.ApplicationFastFood')
+data.setCell(30, 3, 73);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testChangePass')
+data.setCell(31, 2, 'test.ApplicationFastFood')
+data.setCell(31, 3, 73);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testChangePass')
+data.setCell(32, 2, 'test.ApplicationFastFood')
+data.setCell(32, 3, 73);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testChangePass')
+data.setCell(33, 2, 'test.ApplicationFastFood')
+data.setCell(33, 3, 73);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testChangePass')
+data.setCell(34, 2, 'test.ApplicationFastFood')
+data.setCell(34, 3, 73);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testChangePass')
+data.setCell(35, 2, 'test.ApplicationFastFood')
+data.setCell(35, 3, 73);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testChangePass')
+data.setCell(36, 2, 'test.ApplicationFastFood')
+data.setCell(36, 3, 73);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testChangePass')
+data.setCell(37, 2, 'test.ApplicationFastFood')
+data.setCell(37, 3, 73);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testChangePass')
+data.setCell(38, 2, 'test.ApplicationFastFood')
+data.setCell(38, 3, 73);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testChangePass')
+data.setCell(39, 2, 'test.ApplicationFastFood')
+data.setCell(39, 3, 72);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testChangePass')
+data.setCell(40, 2, 'test.ApplicationFastFood')
+data.setCell(40, 3, 72);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testChangePass')
+data.setCell(41, 2, 'test.ApplicationFastFood')
+data.setCell(41, 3, 72);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testChangePass')
+data.setCell(42, 2, 'test.ApplicationFastFood')
+data.setCell(42, 3, 72);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testChangePass')
+data.setCell(43, 2, 'test.ApplicationFastFood')
+data.setCell(43, 3, 72);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testChangePass')
+data.setCell(44, 2, 'test.ApplicationFastFood')
+data.setCell(44, 3, 72);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testChangePass')
+data.setCell(45, 2, 'test.ApplicationFastFood')
+data.setCell(45, 3, 72);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testChangePass')
+data.setCell(46, 2, 'test.ApplicationFastFood')
+data.setCell(46, 3, 72);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testChangePass')
+data.setCell(47, 2, 'test.ApplicationFastFood')
+data.setCell(47, 3, 72);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testChangePass')
+data.setCell(48, 2, 'test.ApplicationFastFood')
+data.setCell(48, 3, 72);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testChangePass')
+data.setCell(49, 2, 'test.ApplicationFastFood')
+data.setCell(49, 3, 72);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testChangePass')
+data.setCell(50, 2, 'test.ApplicationFastFood')
+data.setCell(50, 3, 72);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testChangePass')
+data.setCell(51, 2, 'test.ApplicationFastFood')
+data.setCell(51, 3, 72);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testChangePass')
+data.setCell(52, 2, 'test.ApplicationFastFood')
+data.setCell(52, 3, 72);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testChangePass')
+data.setCell(53, 2, 'test.ApplicationFastFood')
+data.setCell(53, 3, 72);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testChangePass')
+data.setCell(54, 2, 'test.ApplicationFastFood')
+data.setCell(54, 3, 72);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testChangePass')
+data.setCell(55, 2, 'test.ApplicationFastFood')
+data.setCell(55, 3, 72);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testChangePass')
+data.setCell(56, 2, 'test.ApplicationFastFood')
+data.setCell(56, 3, 71);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testChangePass')
+data.setCell(57, 2, 'test.ApplicationFastFood')
+data.setCell(57, 3, 71);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testChangePass')
+data.setCell(58, 2, 'test.ApplicationFastFood')
+data.setCell(58, 3, 71);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'testChangePass')
+data.setCell(59, 2, 'test.ApplicationFastFood')
+data.setCell(59, 3, 71);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'testChangePass')
+data.setCell(60, 2, 'test.ApplicationFastFood')
+data.setCell(60, 3, 71);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'testChangePass')
+data.setCell(61, 2, 'test.ApplicationFastFood')
+data.setCell(61, 3, 71);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'testChangePass')
+data.setCell(62, 2, 'test.ApplicationFastFood')
+data.setCell(62, 3, 71);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'testChangePass')
+data.setCell(63, 2, 'test.ApplicationFastFood')
+data.setCell(63, 3, 71);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'testChangePass')
+data.setCell(64, 2, 'test.ApplicationFastFood')
+data.setCell(64, 3, 71);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'testChangePass')
+data.setCell(65, 2, 'test.ApplicationFastFood')
+data.setCell(65, 3, 71);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'testChangePass')
+data.setCell(66, 2, 'test.ApplicationFastFood')
+data.setCell(66, 3, 71);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'testChangePass')
+data.setCell(67, 2, 'test.ApplicationFastFood')
+data.setCell(67, 3, 71);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'testChangePass')
+data.setCell(68, 2, 'test.ApplicationFastFood')
+data.setCell(68, 3, 71);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'testChangePass')
+data.setCell(69, 2, 'test.ApplicationFastFood')
+data.setCell(69, 3, 70);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'testChangePass')
+data.setCell(70, 2, 'test.ApplicationFastFood')
+data.setCell(70, 3, 70);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'testChangePass')
+data.setCell(71, 2, 'test.ApplicationFastFood')
+data.setCell(71, 3, 70);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'testChangePass')
+data.setCell(72, 2, 'test.ApplicationFastFood')
+data.setCell(72, 3, 70);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'testChangePass')
+data.setCell(73, 2, 'test.ApplicationFastFood')
+data.setCell(73, 3, 70);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'testChangePass')
+data.setCell(74, 2, 'test.ApplicationFastFood')
+data.setCell(74, 3, 69);
+window.suiteTableData['suite_changePass']= { tableData: data, tableDiv: 'times-div-suite_changePass'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <div id="times-div-suite_changePass">
+              </div> <!-- times-div-suite_changePass -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suite_changePass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suite changePass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suite_changePass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">5 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.ApplicationFastFood</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testLogin</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateInformation</span>
+                <br/>
+                <span class="ignored-method-name">testRegister</span>
+                <br/>
+                <span class="ignored-method-name">testUpdateProduct</span>
+                <br/>
+                <span class="ignored-method-name">testInsertProduct</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite_changePass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ApplicationFastFood</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testChangePass(, , , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                <span class="method-start">171 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                <span class="method-start">289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)</span>
+                <span class="method-start">369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)</span>
+                <span class="method-start">473 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)</span>
+                <span class="method-start">553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm cann'...)</span>
+                <span class="method-start">645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm ca...)</span>
+                <span class="method-start">729 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, , Confirm ca...)</span>
+                <span class="method-start">815 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongA7, , , NewPass cann't be empty, , Confirm cann't be empty)</span>
+                <span class="method-start">896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, , Confirm cann...)</span>
+                <span class="method-start">975 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, , Confirm ca...)</span>
+                <span class="method-start">1052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, , Confirm ca...)</span>
+                <span class="method-start">1129 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)</span>
+                <span class="method-start">1206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)</span>
+                <span class="method-start">1281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)</span>
+                <span class="method-start">1357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)</span>
+                <span class="method-start">1431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)</span>
+                <span class="method-start">1510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)</span>
+                <span class="method-start">1587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongA7, , cuongcuongA7, , , Confirm cann't be empty)</span>
+                <span class="method-start">1664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(asdf, PassCurrent has to bigger 6 character, , NewPass cann't be empty, asdf, Confirm has to bigger ...)</span>
+                <span class="method-start">1742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(as df, PassCurrent has to bigger 6 character, , NewPass cann't be empty, as df, Confirm has to bigge...)</span>
+                <span class="method-start">1843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(a df#, PassCurrent has to bigger 6 character, , NewPass cann't be empty, a df#, Confirm has to bigge...)</span>
+                <span class="method-start">1916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass cann...)</span>
+                <span class="method-start">1988 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass can...)</span>
+                <span class="method-start">2063 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, , NewPass ...)</span>
+                <span class="method-start">2135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuong, Con...)</span>
+                <span class="method-start">2210 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongA ...)</span>
+                <span class="method-start">2287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, , NewPass cann't be empty, cuongcuongÁ ...)</span>
+                <span class="method-start">2368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongA7, , , NewPass cann't be empty, cuongcuongA7, )</span>
+                <span class="method-start">2442 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, asdf, Confirm has to bigger 6 character)</span>
+                <span class="method-start">2517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, as df, Confirm has to bigger 6 character)</span>
+                <span class="method-start">2592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, a df#, Confirm has to bigger 6 character)</span>
+                <span class="method-start">2665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcu...)</span>
+                <span class="method-start">2738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongc...)</span>
+                <span class="method-start">2808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuo...)</span>
+                <span class="method-start">2881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuong, Confirm malformed. Phải có chữ...)</span>
+                <span class="method-start">2957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA 7, Confirm malformed. Phải có ...)</span>
+                <span class="method-start">3029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongÁ 7, Confirm malformed. Phải có ...)</span>
+                <span class="method-start">3108 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, , NewPass cann't be empty, cuongcuongA7, )</span>
+                <span class="method-start">3185 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, asdf, Confirm has to bigger ...)</span>
+                <span class="method-start">3261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, as df, Confirm has to bigge...)</span>
+                <span class="method-start">3336 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, a df#, Confirm has to bigge...)</span>
+                <span class="method-start">3413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)</span>
+                <span class="method-start">3490 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)</span>
+                <span class="method-start">3562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to low...)</span>
+                <span class="method-start">3635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, cuongcuong, Con...)</span>
+                <span class="method-start">3712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongA ...)</span>
+                <span class="method-start">3786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, cuongcuongÁ ...)</span>
+                <span class="method-start">3859 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongA7, , cuongcuongA7, )</span>
+                <span class="method-start">3933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, asdf, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                <span class="method-start">4007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, as df, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                <span class="method-start">4079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, a df#, NewPass has to bigger 6 character, , Confirm cann't be empty)</span>
+                <span class="method-start">4151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuongcuongcuongcuongcuongcuong, NewPass has to lower 4...)</span>
+                <span class="method-start">4224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong cuongcuongcuongcuongcuong, NewPass has to lower ...)</span>
+                <span class="method-start">4296 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, NewPass has to low...)</span>
+                <span class="method-start">4370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuong, NewPass malformed. Phải có chữ hoa và số, , Confirm cann'...)</span>
+                <span class="method-start">4442 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongA 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)</span>
+                <span class="method-start">4526 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongÁ 7, NewPass malformed. Phải có chữ hoa và số, , Confirm ca...)</span>
+                <span class="method-start">4600 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(, PassCurrent cann't be empty, cuongcuongA7, , , Confirm cann't be empty)</span>
+                <span class="method-start">4674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(asdf, PassCurrent has to bigger 6 character, asdf, NewPass has to bigger 6 character, asdf, Confirm ...)</span>
+                <span class="method-start">4745 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(as df, PassCurrent has to bigger 6 character, as df, NewPass has to bigger 6 character, as df, Confi...)</span>
+                <span class="method-start">4825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(a df#, PassCurrent has to bigger 6 character, a df#, NewPass has to bigger 6 character, a df#, Confi...)</span>
+                <span class="method-start">4900 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuongcuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuon...)</span>
+                <span class="method-start">4973 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuongcuo...)</span>
+                <span class="method-start">5051 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong, PassCurrent has to lower 40 character, cuongcuong...)</span>
+                <span class="method-start">5125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuong, PassCurrent malformed. Phải có chữ hoa và số, cuongcuong, NewPass malformed. Phải có chữ...)</span>
+                <span class="method-start">5197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongA 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongA 7, NewPass malformed. Phải ...)</span>
+                <span class="method-start">5273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChangePass(cuongcuongÁ 7, PassCurrent malformed. Phải có chữ hoa và số, cuongcuongÁ 7, NewPass malformed. Phải ...)</span>
+                <span class="method-start">5347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testChangePass(cuongcuongA7, , cuongcuongA7, , cuongcuongA7, )</span>
+                <span class="method-start">5421 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)</span>
+                <span class="method-start">5496 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testChangePass(Customer28, PassCurrent incorrect, Customer12345, , Customer12345, )</span>
+                <span class="method-start">5576 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testChangePass(Customer28, PassCurrent incorrect, Customer12345, NewPass != Confirm, Customer123456, NewPass != Con...)</span>
+                <span class="method-start">5654 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testChangePass(Customer28, , Customer12345, , Customer12345, )</span>
+                <span class="method-start">5726 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

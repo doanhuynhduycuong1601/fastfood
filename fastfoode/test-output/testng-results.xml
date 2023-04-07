@@ -1,0 +1,2984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="80" passed="69" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-07T16:39:10 ICT" name="suite changePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="7498">
+    <groups>
+      <group name="changepass">
+        <method signature="ApplicationFastFood.testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" name="testChangePass" class="test.ApplicationFastFood"/>
+      </group> <!-- changepass -->
+    </groups>
+    <test started-at="2023-04-07T16:39:10 ICT" name="changepass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="7498">
+      <class name="test.ApplicationFastFood">
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:11 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:11 ICT" duration-ms="82" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:11 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:11 ICT" duration-ms="76" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [PassCurrent cann't be empty]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [] but found [PassCurrent cann't be empty]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5265)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:11 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="77" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="89" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="77" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="78" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:12 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:12 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="75" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:13 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:13 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="75" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:14 ICT" duration-ms="75" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:14 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass cann't be empty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="76" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="73" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:15 ICT" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:15 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="69" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent cann't be empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm cann't be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="77" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[as df]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to bigger 6 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[a df#]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to bigger 6 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuongcuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:16 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:16 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="71" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass has to lower 40 character]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongcuongcuong& #&cuongcuongcuongcuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm has to lower 40 character]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuong]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongÁ 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Confirm malformed. Phải có chữ hoa và số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="73" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cuongcuongA7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "fastfood.entity.User.getUser()" because "fastfood.util.Authention.authention" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "fastfood.entity.User.getUser()" because "fastfood.util.Authention.authention" is null
+at test.ApplicationFastFood.getChangePassword(ApplicationFastFood.java:4629)
+at test.ApplicationFastFood.btnChangePassActionPerformed(ApplicationFastFood.java:3509)
+at test.ApplicationFastFood$35.actionPerformed(ApplicationFastFood.java:1689)
+at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5264)
+at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="78" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer28]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent incorrect]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Customer12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass != Confirm]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Customer123456]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[NewPass != Confirm]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [PassCurrent incorrect] but found [Cannot invoke "fastfood.entity.User.getPass()" because "fastfood.util.Authention.authention" is null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [PassCurrent incorrect] but found [Cannot invoke "fastfood.entity.User.getPass()" because "fastfood.util.Authention.authention" is null]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5265)
+at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="76" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer28]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent incorrect]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Customer12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Customer12345]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "fastfood.entity.User.getUser()" because "fastfood.util.Authention.authention" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "fastfood.entity.User.getUser()" because "fastfood.util.Authention.authention" is null
+at test.ApplicationFastFood.getChangePassword(ApplicationFastFood.java:4629)
+at test.ApplicationFastFood.btnChangePassActionPerformed(ApplicationFastFood.java:3509)
+at test.ApplicationFastFood$35.actionPerformed(ApplicationFastFood.java:1689)
+at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5264)
+at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="70" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer28]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PassCurrent incorrect]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Customer12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewPass != Confirm]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Customer123456]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[NewPass != Confirm]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [PassCurrent incorrect] but found [Cannot invoke "fastfood.entity.User.getPass()" because "fastfood.util.Authention.authention" is null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [PassCurrent incorrect] but found [Cannot invoke "fastfood.entity.User.getPass()" because "fastfood.util.Authention.authention" is null]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5265)
+at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+        <test-method signature="testChangePass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.ApplicationFastFood[frame0,23,0,1235x702,invalid,hidden,layout=java.awt.BorderLayout,title=,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,1221x665,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" started-at="2023-04-07T16:39:17 ICT" name="testChangePass" data-provider="testDataChangePass" finished-at="2023-04-07T16:39:17 ICT" duration-ms="71" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer28]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Customer12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Customer12345]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "fastfood.entity.User.getUser()" because "fastfood.util.Authention.authention" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "fastfood.entity.User.getUser()" because "fastfood.util.Authention.authention" is null
+at test.ApplicationFastFood.getChangePassword(ApplicationFastFood.java:4629)
+at test.ApplicationFastFood.btnChangePassActionPerformed(ApplicationFastFood.java:3509)
+at test.ApplicationFastFood$35.actionPerformed(ApplicationFastFood.java:1689)
+at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:374)
+at java.desktop/javax.swing.AbstractButton.doClick(AbstractButton.java:354)
+at test.ApplicationFastFood.testChangePass(ApplicationFastFood.java:5264)
+at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePass -->
+      </class> <!-- test.ApplicationFastFood -->
+    </test> <!-- changepass -->
+  </suite> <!-- suite changePass -->
+</testng-results>
