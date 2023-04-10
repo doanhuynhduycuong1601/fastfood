@@ -66,6 +66,7 @@ import java.awt.event.MouseListener;
 import java.awt.print.PrinterException;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.FileSystems;
@@ -98,6 +99,9 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.Timer;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import javax.swing.table.DefaultTableModel;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
@@ -112,6 +116,7 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -5199,6 +5204,7 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 		}
 		return data;
 	}
+	
 
 	@DataProvider(name = "testDataChangePass")
 	public Object[][] testDataChangePass() throws IOException {
@@ -5252,6 +5258,7 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 
 			startRow += 4;
 		}
+		workbook.close();
 		return data;
 	}
 
@@ -5262,11 +5269,59 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 		txtChangNewPass.setText(newInput);
 		txtChangConfirmPass.setText(confirmInput);
 		btnChangePass.doClick();
-		Assert.assertEquals(lblChangerrCurrentPass.getText(), currentError);
-		Assert.assertEquals(lblChangerrNewPass.getText(), newError);
-		Assert.assertEquals(lblChangerrConfirmPass.getText(), confirmError);
+		try {
+			assertEquals(lblChangerrCurrentPass.getText(), currentError);
+			assertEquals(lblChangerrNewPass.getText(), newError);
+			assertEquals(lblChangerrConfirmPass.getText(), confirmError);
+			listChangePass.add("Pass");
+		}catch(AssertionError e) {
+			listChangePass.add("Fail");
+			assertTrue(false);
+		}
 	}
-
+	
+	Workbook workbookChangePass;
+	Sheet sheetChangePass;
+	List<String> listChangePass = new ArrayList<>();
+	@BeforeClass(groups = "changepass")
+	public void testBeforeClassChangePass() {
+		// Mở tệp Excel đã tồn tại
+        FileInputStream inputStream;
+		try {
+			inputStream = new FileInputStream("resource/testCase.xlsx");
+			workbookChangePass = new XSSFWorkbook(inputStream);
+			// Lấy sheet cần ghi dữ liệu vào
+			sheetChangePass = workbookChangePass.getSheet("changepass");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	@AfterClass(groups = "changepass")
+	public void testAfterClassChangePass() {
+		System.out.println(listChangePass.size());
+		int startRow = 30;
+		for (String s : listChangePass) {
+			Row row = sheetChangePass.getRow(startRow);
+			Cell cell = row.getCell(8);
+			if (cell == null) {
+			    cell = row.createCell(8);
+			}
+			cell.setCellValue(s);
+			startRow += 4;
+		}
+		
+		 // Lưu lại tệp Excel sau khi đã ghi dữ liệu
+        try {
+        	FileOutputStream outputStream = new FileOutputStream("resource/testCaseResult.xlsx");
+            workbookChangePass.write(outputStream);
+            workbookChangePass.close();
+        }catch(Exception e) {
+        	e.printStackTrace();
+        }
+	}
+	
 	@DataProvider(name = "testDataUpdateInformation")
 	public Object[][] testDataUpdateInformation() throws IOException {
 		String filePath = "resource/testCase.xlsx";
@@ -5637,7 +5692,13 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 			try {
 				data[i][2] = cellQuantityInput.getStringCellValue();
 			} catch (Exception e) {
-				data[i][2] = String.valueOf(cellQuantityInput.getNumericCellValue());
+				double numQuantity = cellQuantityInput.getNumericCellValue();
+				if(numQuantity == (int)numQuantity) {
+					int ao = (int)numQuantity;
+						data[i][2] = String.valueOf(ao);
+				}else {
+					data[i][2] = String.valueOf(numQuantity);
+				}
 			}
 			Cell cellQuantityError = rowQuantity.getCell(6);
 			data[i][3] = cellQuantityError.getStringCellValue();
@@ -5663,9 +5724,8 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 			}
 			Cell cellNoteError = rowNote.getCell(6);
 			data[i][7] = cellNoteError.getStringCellValue();
-
-		}
 			startRow += 5;
+		}
 		return data;
 	}
 
