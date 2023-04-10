@@ -1,4 +1,4 @@
-USE FASTFOOD
+﻿USE FASTFOOD
 
 go
 drop function if exists luotLike
@@ -110,3 +110,5 @@ begin
 	RETURN @SL
 end
 go
+
+
