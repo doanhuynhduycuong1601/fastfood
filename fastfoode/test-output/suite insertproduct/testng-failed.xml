@@ -4,14 +4,16 @@
   <test thread-count="5" name="insertproduct(failed)">
     <groups>
       <run>
-        <include name="insertproduct"/>
+        <include name="updateproduct"/>
       </run>
     </groups>
     <classes>
       <class name="test.ApplicationFastFood">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="testInsertProduct" invocation-numbers="71 76"/>
+          <include name="beforeSuiteUpdateProduct"/>
+          <include name="testAfterClassupdateproduct"/>
+          <include name="testUpdateProduct" invocation-numbers="71 76"/>
+          <include name="testBeforeClassupdateproduct"/>
         </methods>
       </class> <!-- test.ApplicationFastFood -->
     </classes>

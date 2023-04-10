@@ -169,7 +169,7 @@ insert into users(USERS,PASS,ROLES,EMAIL) values ('Admin12345','Admin12345','adm
 insert users(USERS,PASS,ROLES,EMAIL) values ('Customer12345','Customer12345','user','nhduycuong16011601@gmail.com')
 select * from USERSTORE
 --Khách hàng gửi thông báo muốn nâng cấp tài khoản thành store
-insert into USERSTORE values ('Customer12345','Tôi muốn bán hành cho tôi bán với')
+insert into USERSTORE values ('Customer123','Tôi muốn bán hành cho tôi bán với')
 
 --admin đồng ý cho bán hàng
 exec confirm 'Customer12345',1

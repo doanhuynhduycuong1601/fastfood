@@ -5204,7 +5204,6 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 		}
 		return data;
 	}
-	
 
 	@DataProvider(name = "testDataChangePass")
 	public Object[][] testDataChangePass() throws IOException {
@@ -5274,19 +5273,20 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 			assertEquals(lblChangerrNewPass.getText(), newError);
 			assertEquals(lblChangerrConfirmPass.getText(), confirmError);
 			listChangePass.add("Pass");
-		}catch(AssertionError e) {
+		} catch (AssertionError e) {
 			listChangePass.add("Fail");
 			assertTrue(false);
 		}
 	}
-	
+
 	Workbook workbookChangePass;
 	Sheet sheetChangePass;
 	List<String> listChangePass = new ArrayList<>();
+
 	@BeforeClass(groups = "changepass")
 	public void testBeforeClassChangePass() {
 		// Mở tệp Excel đã tồn tại
-        FileInputStream inputStream;
+		FileInputStream inputStream;
 		try {
 			inputStream = new FileInputStream("resource/testCase.xlsx");
 			workbookChangePass = new XSSFWorkbook(inputStream);
@@ -5297,7 +5297,7 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 			e.printStackTrace();
 		}
 	}
-	
+
 	@AfterClass(groups = "changepass")
 	public void testAfterClassChangePass() {
 		System.out.println(listChangePass.size());
@@ -5306,22 +5306,22 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 			Row row = sheetChangePass.getRow(startRow);
 			Cell cell = row.getCell(8);
 			if (cell == null) {
-			    cell = row.createCell(8);
+				cell = row.createCell(8);
 			}
 			cell.setCellValue(s);
 			startRow += 4;
 		}
-		
-		 // Lưu lại tệp Excel sau khi đã ghi dữ liệu
-        try {
-        	FileOutputStream outputStream = new FileOutputStream("resource/testCaseResult.xlsx");
-            workbookChangePass.write(outputStream);
-            workbookChangePass.close();
-        }catch(Exception e) {
-        	e.printStackTrace();
-        }
+
+		// Lưu lại tệp Excel sau khi đã ghi dữ liệu
+		try {
+			FileOutputStream outputStream = new FileOutputStream("resource/testCase.xlsx");
+			workbookChangePass.write(outputStream);
+			workbookChangePass.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
-	
+
 	@DataProvider(name = "testDataUpdateInformation")
 	public Object[][] testDataUpdateInformation() throws IOException {
 		String filePath = "resource/testCase.xlsx";
@@ -5388,6 +5388,8 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 
 			startRow += 5;
 		}
+
+		workbook.close();
 		return data;
 	}
 
@@ -5400,16 +5402,60 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 		txtUsAddress.setText(addressInput);
 
 		jButton2.doClick();
-		Assert.assertEquals(lblUserrName.getText(), nameError);
-		Assert.assertEquals(lblUserrBirth.getText(), dateError);
-		Assert.assertEquals(lblUserrPhone.getText(), phoneError);
-		Assert.assertEquals(lblUserrAddrss.getText(), addressError);
+		try {
+			Assert.assertEquals(lblUserrName.getText(), nameError);
+			Assert.assertEquals(lblUserrBirth.getText(), dateError);
+			Assert.assertEquals(lblUserrPhone.getText(), phoneError);
+			Assert.assertEquals(lblUserrAddrss.getText(), addressError);
+			listUpdateInfor.add("Pass");
+		} catch (AssertionError e) {
+			listUpdateInfor.add("Fail");
+			assertTrue(false);
+		}
 	}
-	
-	
-	
-	
-	
+
+	Workbook workbookUpdateInfor;
+	Sheet sheetUpdateInfor;
+	List<String> listUpdateInfor = new ArrayList<>();
+
+	@BeforeClass(groups = "updateInforUser")
+	public void testBeforeClassUpdateInfor() {
+		// Mở tệp Excel đã tồn tại
+		FileInputStream inputStream;
+		try {
+			inputStream = new FileInputStream("resource/testCase.xlsx");
+			workbookUpdateInfor = new XSSFWorkbook(inputStream);
+			// Lấy sheet cần ghi dữ liệu vào
+			sheetUpdateInfor = workbookUpdateInfor.getSheet("updateInformation");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@AfterClass(groups = "updateInforUser")
+	public void testAfterClassUpdateInfor() {
+		int startRow = 1;
+		for (String s : listUpdateInfor) {
+			Row row = sheetUpdateInfor.getRow(startRow);
+			Cell cell = row.getCell(8);
+			if (cell == null) {
+				cell = row.createCell(8);
+			}
+			cell.setCellValue(s);
+			startRow += 5;
+		}
+
+		// Lưu lại tệp Excel sau khi đã ghi dữ liệu
+		try {
+			FileOutputStream outputStream = new FileOutputStream("resource/testCase.xlsx");
+			workbookUpdateInfor.write(outputStream);
+			workbookUpdateInfor.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	@DataProvider(name = "testDataRegister")
 	public Object[][] testDataRegister() throws IOException {
 		String filePath = "resource/testCase.xlsx";
@@ -5476,8 +5522,9 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 
 			startRow += 5;
 		}
+		workbook.close();
 		return data;
-		
+
 	}
 
 	@Test(dataProvider = "testDataRegister", groups = "register")
@@ -5489,10 +5536,58 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 		txtReEmail.setText(emailInput);
 
 		btnRegister.doClick();
+		try {
 		Assert.assertEquals(lblReErrorUSe.getText(), userError);
 		Assert.assertEquals(lblReErrorPass.getText(), passError);
 		Assert.assertEquals(lblReerremail.getText(), emailError);
+			listregister.add("Pass");
+		}catch(AssertionError e) {
+			listregister.add("Fail");
+			assertTrue(false);
+		}
 //		Assert.assertEquals(lblReerrConfrimPass.getText(), confirmError);
+	}
+	
+	
+	Workbook workbookregister;
+	Sheet sheetregister;
+	List<String> listregister = new ArrayList<>();
+	@BeforeClass(groups = "register")
+	public void testBeforeClassregister() {
+		// Mở tệp Excel đã tồn tại
+        FileInputStream inputStream;
+		try {
+			inputStream = new FileInputStream("resource/testCase.xlsx");
+			workbookregister = new XSSFWorkbook(inputStream);
+			// Lấy sheet cần ghi dữ liệu vào
+			sheetregister = workbookregister.getSheet("register");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	@AfterClass(groups = "register")
+	public void testAfterClassregister() {
+		int startRow = 25;
+		for (String s : listregister) {
+			Row row = sheetregister.getRow(startRow);
+			Cell cell = row.getCell(8);
+			if (cell == null) {
+			    cell = row.createCell(8);
+			}
+			cell.setCellValue(s);
+			startRow += 5;
+		}
+		
+		 // Lưu lại tệp Excel sau khi đã ghi dữ liệu
+        try {
+        	FileOutputStream outputStream = new FileOutputStream("resource/testCase.xlsx");
+            workbookregister.write(outputStream);
+            workbookregister.close();
+        }catch(Exception e) {
+        	e.printStackTrace();
+        }
 	}
 
 	@BeforeClass
@@ -5500,10 +5595,7 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 		User us = usDao.login("Customer12345", "Customer123");
 		Authention.authention = us;
 	}
-	
-	
-	
-	
+
 	@DataProvider(name = "testDataLogin")
 	public Object[][] testDataLogin() throws IOException {
 		String filePath = "resource/testCase.xlsx";
@@ -5538,11 +5630,9 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 			Cell cellPassError = rowPass.getCell(7);
 			data[i][3] = cellPassError.getStringCellValue();
 
-
 			startRow += 3;
 		}
 		return data;
-		
 	}
 
 	@Test(dataProvider = "testDataLogin", groups = "login")
@@ -5550,15 +5640,59 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 		txtLoginUser.setText(userInput);
 		txtLoginPass.setText(passInput);
 
-
 		btnLogin.doClick();
-		Assert.assertEquals(lblerrLoginUSer.getText(), userError);
-		Assert.assertEquals(lblerrLoginPass.getText(), passError);
+		try {
+			Assert.assertEquals(lblerrLoginUSer.getText(), userError);
+			Assert.assertEquals(lblerrLoginPass.getText(), passError);
+			listlogin.add("Pass");
+		}catch(AssertionError e) {
+			listlogin.add("Fail");
+			assertTrue(false);
+		}
 	}
 	
 	
+	Workbook workbooklogin;
+	Sheet sheetlogin;
+	List<String> listlogin = new ArrayList<>();
+	@BeforeClass(groups = "login")
+	public void testBeforelogin() {
+		// Mở tệp Excel đã tồn tại
+        FileInputStream inputStream;
+		try {
+			inputStream = new FileInputStream("resource/testCase.xlsx");
+			workbooklogin = new XSSFWorkbook(inputStream);
+			// Lấy sheet cần ghi dữ liệu vào
+			sheetlogin = workbooklogin.getSheet("login");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
-	
+	@AfterClass(groups = "login")
+	public void testAfterClasslogin() {
+		int startRow = 31;
+		for (String s : listlogin) {
+			Row row = sheetlogin.getRow(startRow);
+			Cell cell = row.getCell(9);
+			if (cell == null) {
+			    cell = row.createCell(9);
+			}
+			cell.setCellValue(s);
+			startRow += 3;
+		}
+		
+		 // Lưu lại tệp Excel sau khi đã ghi dữ liệu
+        try {
+        	FileOutputStream outputStream = new FileOutputStream("resource/testCase.xlsx");
+            workbooklogin.write(outputStream);
+            workbooklogin.close();
+        }catch(Exception e) {
+        	e.printStackTrace();
+        }
+	}
+
 	@DataProvider(name = "testInsertProduct")
 	public Object[][] testDataInsertProduct() throws IOException {
 		String filePath = "resource/testCase.xlsx";
@@ -5590,10 +5724,10 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 				data[i][2] = cellQuantityInput.getStringCellValue();
 			} catch (Exception e) {
 				double numQuantity = cellQuantityInput.getNumericCellValue();
-				if(numQuantity == (int)numQuantity) {
-					int ao = (int)numQuantity;
-						data[i][2] = String.valueOf(ao);
-				}else {
+				if (numQuantity == (int) numQuantity) {
+					int ao = (int) numQuantity;
+					data[i][2] = String.valueOf(ao);
+				} else {
 					data[i][2] = String.valueOf(numQuantity);
 				}
 			}
@@ -5623,45 +5757,91 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 			data[i][7] = cellNoteError.getStringCellValue();
 			startRow += 5;
 		}
+		workbook.close();
 		return data;
 	}
 
 	@Test(dataProvider = "testInsertProduct", groups = "insertproduct")
 	public void testInsertProduct(String nameInput, String nameError, String quantityInput, String quantityError,
 			String priceInput, String priceError, String noteInput, String noteError) {
-		
+
 		setProductInsert(new Product(0, idStore));
-		
-		
+
 		File file = new File("resource/food.jfif");
 		Ximage.save(file);
 		ImageIcon icon = Ximage.reSizeImgae2(Ximage.read(file.getName()), lblIPImg);
 		lblIPImg.setIcon(icon);
 		lblIPImg.setToolTipText(file.getName());
-		
+
 		txtIPName.setText(nameInput);
 		txtIPQuantity.setText(quantityInput);
 		txtIPPrice.setText(priceInput);
 		txtIPNote.setText(noteInput);
 
 		jButton3.doClick();
-		Assert.assertEquals(lblIPErrorName.getText(), nameError);
-		Assert.assertEquals(lblIPErrorQuantity.getText(), quantityError);
-		Assert.assertEquals(lblIPErrorPrice.getText(), priceError);
-		Assert.assertEquals(lblIPErrorNote.getText(), noteError);
+		try {
+			Assert.assertEquals(lblIPErrorName.getText(), nameError);
+			Assert.assertEquals(lblIPErrorQuantity.getText(), quantityError);
+			Assert.assertEquals(lblIPErrorPrice.getText(), priceError);
+			Assert.assertEquals(lblIPErrorNote.getText(), noteError);
+			listInsertProduct.add("Pass");
+		} catch (AssertionError e) {
+			listInsertProduct.add("Fail");
+			assertTrue(false);
+		}
 	}
 
 	int idStore;
+
 	@BeforeTest(groups = "insertproduct")
 	public void beforeSuite() {
-		Authention.authention = usDao.login("Customer12345","Customer123");
+		Authention.authention = usDao.login("Customer12345", "Customer123");
 		idStore = storeDao.getIdStoreByUser(Authention.authention.getUser());
 	}
-	
-	
-	
-	
-	//update product
+
+	Workbook workbookInsertProduct;
+	Sheet sheetInsertProduct;
+	List<String> listInsertProduct = new ArrayList<>();
+
+	@BeforeClass(groups = "insertproduct")
+	public void testBeforeClassInsertProduct() {
+		// Mở tệp Excel đã tồn tại
+		FileInputStream inputStream;
+		try {
+			inputStream = new FileInputStream("resource/testCase.xlsx");
+			workbookInsertProduct = new XSSFWorkbook(inputStream);
+			// Lấy sheet cần ghi dữ liệu vào
+			sheetInsertProduct = workbookInsertProduct.getSheet("Addproduct");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@AfterClass(groups = "insertproduct")
+	public void testAfterClassInsertProduct() {
+		int startRow = 1;
+		for (String s : listInsertProduct) {
+			Row row = sheetInsertProduct.getRow(startRow);
+			Cell cell = row.getCell(8);
+			if (cell == null) {
+				cell = row.createCell(8);
+			}
+			cell.setCellValue(s);
+			startRow += 5;
+		}
+
+		// Lưu lại tệp Excel sau khi đã ghi dữ liệu
+		try {
+			FileOutputStream outputStream = new FileOutputStream("resource/testCase.xlsx");
+			workbookInsertProduct.write(outputStream);
+			workbookInsertProduct.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	// update product
 	@DataProvider(name = "testUpdateProduct")
 	public Object[][] testDataUpdateProduct() throws IOException {
 		String filePath = "resource/testCase.xlsx";
@@ -5693,10 +5873,10 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 				data[i][2] = cellQuantityInput.getStringCellValue();
 			} catch (Exception e) {
 				double numQuantity = cellQuantityInput.getNumericCellValue();
-				if(numQuantity == (int)numQuantity) {
-					int ao = (int)numQuantity;
-						data[i][2] = String.valueOf(ao);
-				}else {
+				if (numQuantity == (int) numQuantity) {
+					int ao = (int) numQuantity;
+					data[i][2] = String.valueOf(ao);
+				} else {
 					data[i][2] = String.valueOf(numQuantity);
 				}
 			}
@@ -5732,31 +5912,80 @@ public class ApplicationFastFood extends javax.swing.JFrame implements Runnable 
 	@Test(dataProvider = "testUpdateProduct", groups = "updateproduct")
 	public void testUpdateProduct(String nameInput, String nameError, String quantityInput, String quantityError,
 			String priceInput, String priceError, String noteInput, String noteError) {
-		
-		setProductInsert(new Product(1, idStore));
-		
+
+		setProductInsert(new Product(2, idStore));
+
 		File file = new File("resource/food.jfif");
 		Ximage.save(file);
 		ImageIcon icon = Ximage.reSizeImgae2(Ximage.read(file.getName()), lblIPImg);
 		lblIPImg.setIcon(icon);
 		lblIPImg.setToolTipText(file.getName());
-		
+
 		txtIPName.setText(nameInput);
 		txtIPQuantity.setText(quantityInput);
 		txtIPPrice.setText(priceInput);
 		txtIPNote.setText(noteInput);
 
 		jButton3.doClick();
+		try {
 		Assert.assertEquals(lblIPErrorName.getText(), nameError);
 		Assert.assertEquals(lblIPErrorQuantity.getText(), quantityError);
 		Assert.assertEquals(lblIPErrorPrice.getText(), priceError);
 		Assert.assertEquals(lblIPErrorNote.getText(), noteError);
+		listupdateproduct.add("Pass");
+		}catch(AssertionError e) {
+			listupdateproduct.add("Fail");
+			assertTrue(false);
+		}
 	}
 
 	@BeforeTest(groups = "updateproduct")
 	public void beforeSuiteUpdateProduct() {
-		Authention.authention = usDao.login("Customer12345","Customer123");
+		Authention.authention = usDao.login("Customer12345", "Customer123");
 		idStore = storeDao.getIdStoreByUser(Authention.authention.getUser());
 	}
 	
+	
+	Workbook workbookupdateproduct;
+	Sheet sheetupdateproduct;
+	List<String> listupdateproduct = new ArrayList<>();
+
+	@BeforeClass(groups = "updateproduct")
+	public void testBeforeClassupdateproduct() {
+		// Mở tệp Excel đã tồn tại
+		FileInputStream inputStream;
+		try {
+			inputStream = new FileInputStream("resource/testCase.xlsx");
+			workbookupdateproduct = new XSSFWorkbook(inputStream);
+			// Lấy sheet cần ghi dữ liệu vào
+			sheetupdateproduct = workbookupdateproduct.getSheet("Updateproduct");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@AfterClass(groups = "updateproduct")
+	public void testAfterClassupdateproduct() {
+		int startRow = 1;
+		for (String s : listupdateproduct) {
+			Row row = sheetupdateproduct.getRow(startRow);
+			Cell cell = row.getCell(8);
+			if (cell == null) {
+				cell = row.createCell(8);
+			}
+			cell.setCellValue(s);
+			startRow += 5;
+		}
+
+		// Lưu lại tệp Excel sau khi đã ghi dữ liệu
+		try {
+			FileOutputStream outputStream = new FileOutputStream("resource/testCase.xlsx");
+			workbookupdateproduct.write(outputStream);
+			workbookupdateproduct.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 }

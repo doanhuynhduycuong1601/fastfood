@@ -11,7 +11,9 @@
       <class name="test.ApplicationFastFood">
         <methods>
           <include name="beforeSuiteUpdateProduct"/>
+          <include name="testAfterClassupdateproduct"/>
           <include name="testUpdateProduct" invocation-numbers="71 76"/>
+          <include name="testBeforeClassupdateproduct"/>
         </methods>
       </class> <!-- test.ApplicationFastFood -->
     </classes>
