@@ -1,0 +1,180 @@
+/* Button */
+.at-button {cursor: pointer;height: 30px;padding: 10px;display: flex;align-items: center;border-radius: 3px;border: none;}
+.at-button-default {background-color: #fff;color: #0b8eb2;border: 1px solid #dfe4e6 !important;}
+.at-button-default:hover {border-color: #0eabd8 !important;}
+.at-button-green {background-color: #9cce24;color: #fff;border-bottom: 2px solid #90bf21;font-weight: bold;}
+.at-button-green:hover{background-color: #a7ed00;}
+
+/* Drop Area */
+.drop-area {background-color: #DDF8FB;border: 1px dashed #13ABD7;margin: 10px !important;position: initial !important;top: initial !important;right: initial !important;left: initial !important;height: 10px;transform: initial !important;}
+.drop-area.drop-top {flex: calc(100% - 30px);}
+
+/* Error */
+.error {border: 1px solid #f44336;}
+.error:focus {outline: none;border: 1px solid #f44336;}
+
+/* Effect */
+.hide {display: none;}
+.show {display: block;}
+.ql-align-center {text-align: center;}
+/* Popover Date Picker */
+div.popover_date_picker {cursor: default;background-color: #fff;border: none !important;box-shadow: 0 0 5px 0 rgb(0 0 0 / 46%) !important;font-family: Roboto;font-size: 13px !important;outline: none;padding: 10px 0 !important;max-width: 241px !important;min-width: 230px !important;position: absolute;z-index: 2003;}
+div.popover_date_picker .list-option {padding: 0 10px;}
+div.popover_date_picker .popper_date {padding: 12px 0 14px 0;text-align: center;}
+div.popover_date_picker .popper_date::first-letter{text-transform: capitalize;}
+div.popover_date_picker .popper_date_picker {color: rgb(102, 102, 102);padding: 0 15px;}
+div.popover_date_picker .popper_date_picker .datepicker-controls {padding: 0 8px 10px 8px;margin-top: 4px;}
+div.popover_date_picker .popper_date_picker .datepicker-footer {display: none;}
+div.popover_date_picker .popper_date_picker .days-of-week {border-top: 1px solid #eee;border-bottom: 1px solid #eee;}
+div.popover_date_picker .popper_date_picker .days-of-week > .dow {font-size: inherit;}
+div.popover_date_picker .popper_date_picker .days-of-week > .dow:first-child {color: rgb(255, 0, 0);}
+div.popover_date_picker .popper_date_picker .days-of-week > .dow:last-child {color: rgb(255, 0, 0);}
+div.popover_date_picker .popper_date_picker .datepicker-grid {width: auto;}
+div.popover_date_picker .popper_date_picker .datepicker-grid .datepicker-cell{background-clip: content-box;padding-top: 2px;padding-bottom: 2px;line-height: 2rem;}
+div.popover_date_picker .popper_date_picker .datepicker-grid .datepicker-cell.day.prev {visibility: hidden;}
+div.popover_date_picker .popper_date_picker .datepicker-grid .datepicker-cell.day.next {visibility: hidden;}
+div.popover_date_picker .popper_date_picker .datepicker-grid .datepicker-cell.day.selected {background-color: rgb(14, 171, 216)}
+div.popover_date_picker .popper_date_picker button.view-switch {color: inherit;font-size: inherit;}
+div.popover_date_picker .popper_date_picker button.prev-btn {border: 1px solid #edf0f1;width: 30px;height: 30px;}
+div.popover_date_picker .popper_date_picker button.next-btn {border: 1px solid #edf0f1;width: 30px;height: 30px;}
+div.popover_date_picker .popper_date_settings {color: rgb(102, 102, 102);padding: 0 10px;}
+div.popover_date_picker .popper_date_settings > * {margin-bottom: 10px;}
+div.popover_date_picker .popper_date_settings .styled_number input {background-color: #fff;border: 1px solid #dfe4e6;border-radius: 3px;font-size: 12px;text-align: left;margin-right: 0;padding: 0 8px;height: 30px;width: 100%;}
+div.popover_date_picker .popper_title {color: #b6b6b6;font-size: 12px;text-align: center;width: 100%;}
+div.popover_date_picker .popper_footer {border-top: 1px solid #e3eef1;display: flex;align-items: center;padding: 10px 10px 0 10px;}
+
+/* StyledButton */
+button.styled_button {background-color: #9cce24;color: #ffffff;border: 1px solid transparent;border-radius: 3px;outline: none;cursor: pointer;font-size: 13px;font-weight: bold;line-height: 29px;margin-right: 8px;padding: 0 10px;min-width: 64px;height: 30px;}
+
+button.styled_button:active, button.styled_button:focus{box-shadow: none;outline: none;}
+button.styled_button:disabled {cursor: not-allowed;}
+
+button.styled_button:hover{filter: brightness(90%);box-shadow: none;outline: none;}
+button.styled_button:disabled:hover{filter: brightness(100%);}
+
+button.styled_button.default {border-radius: 3px;}
+button.styled_button.linear {}
+button.styled_button.round {border-radius: 10px;}
+button.styled_button.sharp {border-radius: 0;}
+
+/* StyledCheckbox */
+div.styled_checkbox .multiple-check-box {font-size:13px;font-weight:200;padding: 5px 10px 5px 10px;height: 20px;width: fit-content;}
+div.styled_checkbox .check-box-body {color:#333333;display:block;cursor:pointer;user-select:none;padding-left:29px;padding-top:3px;position: relative;width: fit-content;}
+div.styled_checkbox .check-box-body .check-box {cursor:pointer;position: absolute;opacity:0;}
+div.styled_checkbox .check-box-body .checkmark {border: 1px solid #5682B2;border-radius:3px;margin-top:4px;position: absolute;top: 0;left: 0;height: 16px;width: 16px;}
+div.styled_checkbox .check-box-body .checkmark:after {border: solid white;border-width: 0 2px 2px 0;content: "";position: absolute;display: none;margin-left:5px;margin-top:1px;width: 5px;height: 10px;transform: rotate(45deg);-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);}
+div.styled_checkbox .check-box-body input:checked ~ .checkmark {background-color: #5682B2;}
+div.styled_checkbox .check-box-body input:checked ~ .checkmark:after{display:block;}
+
+/* StyledDatePicker */
+div.styled_date_picker .btn-date-picker {background-color: #fff;border: 1px solid #d2d8d9;border-radius: 3px;cursor: pointer;display: inline-flex;align-items: center;justify-content: space-between;font-family: Arial;font-size: 13px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0 10px;height: 30px;}
+div.styled_date_picker .btn-date-picker:hover {background-color: #ebedf7;}
+div.styled_date_picker .btn-date-picker:focus {outline: none;border: 1px solid #21b0d9;}
+
+div.styled_date_picker .btn-date-picker .btn-content {margin-right: 10px;overflow: hidden;text-overflow: ellipsis;width: 100%;}
+
+/* Styled Dropdown */
+div.styled_dropdown {position: relative;}
+div.styled_dropdown .dropdown-toggle {width: 100%;height: 30px;display: flex;justify-content: space-between;align-items: center;outline: none;background-color: rgb(255, 255, 255);border: 1px solid rgb(210, 216, 217);border-radius: 3px;box-shadow: rgb(242, 242, 242) 0 3px 1px 0 inset;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;color:rgb(51, 51, 51);font-size: 13px;padding: 5px 10px;cursor: pointer;}
+div.styled_dropdown .dropdown-item {cursor: pointer;color: #333;background-color: #ffffff;display: none;font-size: 13px;padding: 5px 10px;overflow: hidden;text-overflow: ellipsis;line-height: 20px;}
+div.styled_dropdown .dropdown-item.show {display: block;z-index: 1000;}
+div.styled_dropdown button.dropdown-item {display: block;width: 100%;padding: 0.25rem 1.5rem;clear: both;font-weight: 400;text-align: inherit;white-space: nowrap;background-color: transparent;border: 0;}
+div.styled_dropdown button.dropdown-item.selected {background-color: #e4f8ff;color: #333;font-weight: 700;outline: none;}
+div.styled_dropdown button.dropdown-item:focus,div.styled_dropdown button.dropdown-item:hover {background-color: #e4f8ff;color: #333;outline: none;}
+div.styled_dropdown button.dropdown-item > div {color: rgb(51, 51, 51);height: 30px;line-height: 30px;font-size: 13px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+
+/* StyledError */
+span.styled_error {color: red;display: inline;line-height: normal;}
+span.styled_error * {display: inline;line-height: normal;}
+
+/* StyledInput */
+input.styled_input {height: 30px;width: 100%;border: 1px solid #d2d8d9;border-radius: 3px;box-shadow: 0 3px 2px 0 #f2f2f2 inset;font-size: 13px;padding: 0 10px 0 10px;}
+input.styled_input::-webkit-input-placeholder {font-style: italic;font-size: 13px;}
+input.styled_input::-moz-placeholder {font-style: italic;font-size: 13px;}
+input.styled_input:-moz-placeholder {font-style: italic;font-size: 13px;}
+input.styled_input:-ms-input-placeholder {font-style: italic;font-size: 13px;}
+
+input.styled_input:focus{outline: none;}
+
+input.styled_input.default {}
+input.styled_input.linear {border: none;border-bottom: 2px solid #d2d8d9;background-color: #fafafa;box-shadow: 0 0 0 0;}
+input.styled_input.round {border-radius: 10px;}
+input.styled_input.sharp {border-radius: 0;}
+
+/* StyledHelpText */
+div.styled_help_text {font-family: 'Arial';font-size: 11px;margin-bottom: 5px;}
+div.styled_label div {width: 100%;}
+div.styled_label div * {font-family: inherit;font-size: inherit;color: inherit;margin: 0;}
+
+/* StyledInputFile */
+div.styled_input_file:hover {
+    cursor: pointer;
+}
+div.styled_input_file label {
+    cursor: pointer;
+    border: solid 1px #d2d8d9;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: white;
+    color: #0b8eb2;
+    padding: 6px 10px;
+}
+
+/* StyledLabel */
+div.styled_label {font-family: 'Arial';}
+div.styled_label div {width: 100%;}
+div.styled_label div * {font-family: inherit;font-size: inherit;color: inherit;margin: 0;}
+
+/* StyledMultilineText */
+textarea.styled_multiline {border-radius:3px;border: 1px solid #d2d8d9;box-shadow: 0 3px 2px 0 #f2f2f2 inset;padding: 0 10px 0 10px;width:100%;}
+textarea.styled_multiline::-webkit-input-placeholder {font-style: italic;font-size:13px;}
+textarea.styled_multiline::-moz-placeholder {font-style: italic;font-size:13px;}
+textarea.styled_multiline:-moz-placeholder {font-style: italic;font-size:13px;}
+textarea.styled_multiline:-ms-input-placeholder {font-style: italic;font-size:13px;}
+
+textarea.styled_multiline:focus{outline:none;}
+
+textarea.styled_multiline.default {}
+textarea.styled_multiline.linear {border:none !important;border-bottom: 2px solid #d2d8d9 !important;background-color:#fafafa !important;box-shadow: 0 0 0 0 !important;}
+textarea.styled_multiline.round {border-radius: 10px !important;}
+textarea.styled_multiline.sharp {border-radius:0 !important;}
+
+/* StyledNumber */
+div.styled_number {position: relative;width: auto;}
+
+div.styled_number input {-moz-appearance: textfield;display: inline-block;box-shadow: inset 0 3px 1px 0 #f2f2f2;border-radius: 3px;margin-right: 0.5rem;padding: 0;padding-right: 3rem !important;text-align: right;width: 95px;}
+div.styled_number input::-webkit-inner-spin-button {-moz-appearance: none;-webkit-appearance: none;appearance:none;margin: 0;}
+div.styled_number input::-webkit-outer-spin-button {-moz-appearance: none;-webkit-appearance: none;appearance:none;margin: 0;}
+div.styled_number input:hover::-webkit-inner-spin-button {-moz-appearance: none;-webkit-appearance: none;appearance:none;margin:0;}
+div.styled_number input:hover::-webkit-outer-spin-button {-moz-appearance: none;-webkit-appearance: none;appearance:none;margin:0;}
+
+div.styled_number input:focus {outline: #d2d7da;}
+
+div.styled_number input.default {}
+div.styled_number input.linear {border:none;border-bottom: 2px solid #d2d8d9;background-color:#fafafa;box-shadow: 0 0 0 0;}
+div.styled_number input.round {border-radius: 10px;}
+div.styled_number input.sharp {border-radius:0;}
+
+div.styled_number .btn {background-color: transparent;border-bottom: 1px solid #d2d8d9;border-left: 1px solid #d2d8d9;border-radius: 0;line-height: 0;position: absolute;height: 16px;right: 27px;}
+div.styled_number .btn i {line-height: 0; color: #889199; font-size: 10px;}
+div.styled_number .btn:focus {box-shadow: none;}
+div.styled_number .btn:active {background-color: #b0b0b1;color: #ffffff;}
+div.styled_number .btn:active i {color: #ffffff;}
+
+div.styled_number .btn.number--up {width: 35px;top: 0;left: 60px;}
+div.styled_number .btn.number--up:active {border-top-right-radius: 3px;}
+
+div.styled_number .btn.number--down {width: 35px;bottom: 1px;left: 60px;border-bottom: 0;}
+div.styled_number .btn.number--down:active {border-bottom-right-radius: 3px;}
+
+/* StyledRadio */
+div.styled_radio .title {color: #333333;font-size: 13px;font-weight: 200;margin-bottom: 5px;padding: 5px 10px 5px 10px;width: 100%;height: 19px;}
+div.styled_radio .help {color: #333333;font-size: 11px;font-weight: 100;margin-bottom: 15px;padding: 5px 10px 5px 10px;height: 19px;width: 100%;}
+div.styled_radio .radio-body {display: block;cursor: pointer;user-select: none;color: #333333;font-size: 13px;padding-left: 20px;position: relative;width: fit-content;}
+div.styled_radio .radio-body .radio {opacity: 0;cursor: pointer;position: absolute;}
+div.styled_radio .radio-body .checkmark {border: 2px solid #5682b2;border-radius: 50%;margin-top: 2px;height: 15px;width: 15px;position: absolute;top: 0;left: 0;}
+div.styled_radio .radio-body .checkmark:after {border-radius: 50%;border: 2px solid #fff;content: "";display: none;position: absolute;width: 11px;height: 11px;}
+div.styled_radio .radio-body input:checked ~ .checkmark:after {display: block;background-color: #5682b2;}
+
+/* StyledWrapText */
+span.styled_wrap_text {color: #999999;font-size: 12px;margin-left: 0.5rem;}

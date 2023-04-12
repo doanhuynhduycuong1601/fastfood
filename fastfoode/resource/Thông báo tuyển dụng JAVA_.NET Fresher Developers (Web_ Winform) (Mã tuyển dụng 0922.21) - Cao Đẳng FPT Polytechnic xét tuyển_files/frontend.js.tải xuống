@@ -1,0 +1,60 @@
+(function($) {
+	"use strict";
+  	var current = 1,current_step,next_step,steps;
+	steps = $("fieldset.question-list-form").length;
+
+	$( ".next", ".question-list-form" ).click( function(){
+		current_step = $(this).parent().parent();
+		next_step = $(this).parent().parent().next();
+		next_step.show();
+		current_step.hide();
+		// setProgressBar(++current);
+	});
+	$( ".previous", ".question-list-form" ).click( function(){
+		current_step = $(this).parent().parent();
+		next_step = $(this).parent().parent().prev();
+		next_step.show();
+		current_step.hide();
+		// setProgressBar(--current);
+	});
+	$( 'fieldset.question-list-form').each( function(index){
+		var item = index + 1,
+			item_submit = $( '.submit', 'fieldset:nth-child(' + steps + ')'),
+			item_first = $( '.previous', 'fieldset:nth-child(1)'),
+			item_last = $( '.next', 'fieldset:nth-child('+ steps +')');
+
+			item_first.addClass('disable');
+			item_last.addClass('disable');
+			item_submit.removeClass('disable');
+	});
+
+	// setProgressBar(current);
+	  // Change progress bar action
+	function setProgressBar(curStep){
+		var percent = parseFloat(100 / steps) * curStep;
+		percent = percent.toFixed();
+		$(".progress-bar", '.question-list-progress').css("width",percent+"%").html(percent+"%");
+  	}
+	$( ".button_step .submit " ).click( function(){
+		var id = $(this).data('id');
+		jQuery.ajax( {
+			type : "POST",
+			url  : question_list_elight.ajaxurl,
+			data : {
+				action : 'question_list_cookie_id_name',
+				id_code : id,
+			},
+			success : function( data ) {
+			}
+		} );
+	});
+
+	$(document).ready(function() {
+		$(window).load(function() {
+			if ( $('div').hasClass('question-list-share_fb_img') ) {
+			    var id = $('.question-list-share_fb_img').data('link');
+			    window.location.href = id;
+			}
+		});
+	});
+})(jQuery);	// EOF

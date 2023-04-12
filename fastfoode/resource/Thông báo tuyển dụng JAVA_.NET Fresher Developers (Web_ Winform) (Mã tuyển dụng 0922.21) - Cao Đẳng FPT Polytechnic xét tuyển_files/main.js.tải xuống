@@ -1,0 +1,228 @@
+var submitClick = false;
+jQuery(document).ready(function () {
+    const dataForm = new FormData();
+    var $fileInput = jQuery("#fileInput");
+    let contest_modal = jQuery("#contest_modal");
+
+    $fileInput.change(function (data) {
+        jQuery("#staticBackdrop").modal("show");
+        const file = data.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        document.getElementById("angle-control").disabled = false;
+        document.getElementById("scale-control").disabled = false;
+        const canvas = (this.__canvas = new fabric.Canvas("c", {
+            width: 200,
+            height: 300,
+        }));
+        var image = new fabric.Image();
+        resizeCanvas();
+
+        (function () {
+            fabric.Object.prototype.transparentCorners = false;
+
+            let angleControl = jQuery("#angle-control");
+            angleControl.on("input", function () {
+                image.set("angle", parseInt(this.value, 10)).setCoords();
+                canvas.requestRenderAll();
+            });
+
+            let scaleControl = jQuery("#scale-control");
+            scaleControl.on("input", function () {
+                image.scale(parseFloat(this.value) / 200).setCoords();
+                canvas.requestRenderAll();
+            });
+
+            function updateControls() {
+                scaleControl.value = image.scaleX;
+                angleControl.value = image.angle;
+            }
+            canvas.on({
+                "object:moving": updateControls,
+                "object:scaling": updateControls,
+                "object:resizing": updateControls,
+                "object:rotating": updateControls,
+            });
+
+            canvas.setOverlayImage(
+                dataGlobal.frame,
+                function () {
+                    canvas.overlayImage.scaleToWidth(canvas.getWidth());
+                    canvas.renderAll();
+                },
+                {
+                    originX: "left",
+                    originY: "top",
+                    crossOrigin: "anonymous",
+                }
+            );
+        })();
+        let modalId = document.getElementById("staticBackdrop");
+        modalId.addEventListener("hidden.bs.modal", function () {
+            contest_modal.html(
+                `<canvas id="c" style="border: 1px solid grey;"></canvas>`
+            );
+        });
+        reader.onload = function (event) {
+            var imgObj = new Image();
+            imgObj.src = event.target.result;
+            fabric.util.loadImage(imgObj.src, function () {
+                image = new fabric.Image(imgObj);
+                image.set({
+                    lockMovementX: false,
+                    lockMovementY: false,
+                    lockScalingX: false,
+                    lockScalingY: false,
+                    lockRotation: false,
+                    selectable: true,
+                    centeredRotation: true,
+                    centeredScaling: true,
+                    cornerColor: "#0d2240",
+                    cornerSize: 30,
+                    lockSkewingX: true,
+                    lockSkewingY: true,
+                    originX: "center",
+                    originY: "center",
+                    hasControls: false,
+                });
+
+                image.scaleToHeight(canvas.getHeight());
+                image.scaleToWidth(canvas.getWidth());
+                canvas.centerObject(image);
+                canvas.add(image);
+                canvas.renderAll();
+                canvas.setActiveObject(image);
+            });
+        };
+
+        function resizeCanvas() {
+            const outerCanvasContainer =
+                document.getElementsByClassName("canvas-container")[0];
+            outerCanvasContainer.style.width = "auto";
+            outerCanvasContainer.style.height = `${outerCanvasContainer.clientWidth}px`;
+        }
+
+        window.addEventListener("resize", function () {
+            resizeCanvas();
+        });
+
+        jQuery("#btnCrop").click(function () {
+            let image = DataURIToBlob(
+                canvas.toDataURL({ format: "png", quality: 1, multiplier: 4 })
+            );
+            dataForm.append("image", image, "cuoc-thi.png");
+            jQuery("#staticBackdrop").modal("hide");
+        });
+    });
+
+    jQuery("#btnSave").on("click", function (e) {
+        e.preventDefault();
+        if (submitClick) {
+            return;
+        }
+        dataForm.append("category", dataGlobal.category);
+        if (dataGlobal.name) {
+            let name = jQuery("#name").val();
+            if (!name) {
+                alert("Vui lòng nhập tên.");
+                return;
+            }
+            dataForm.append("name", name);
+        }
+
+        if (dataGlobal.phone) {
+            let phone = jQuery("#phone").val();
+            if (!phone) {
+                alert("Vui lòng nhập số điện thoại.");
+                return;
+            }
+            dataForm.append("phone", phone);
+        }
+
+        if (dataGlobal.email) {
+            let email = jQuery("#email").val();
+            if (!email) {
+                alert("Vui lòng nhập email.");
+                return;
+            }
+            dataForm.append("email", email);
+        }
+
+        if (dataGlobal.city) {
+            let city = jQuery("#city").val();
+            if (!city) {
+                alert("Vui lòng nhập email.");
+                return;
+            }
+            dataForm.append("city", city);
+        }
+
+        if (dataGlobal.school) {
+            let className = jQuery("#class").val();
+            if (!className) {
+                alert("Vui lòng nhập trường THPT.");
+                return;
+            }
+            dataForm.append("school", className);
+        }
+
+        if (dataGlobal.facebook) {
+            let facebook = jQuery("#facebook").val();
+            dataForm.append("facebook", facebook);
+        }
+
+        if (dataGlobal.code) {
+            let code = jQuery("#code").val();
+            if (!code) {
+                alert("Vui lòng nhập mã sinh viên.");
+                return;
+            }
+        }
+
+        let description = jQuery("#description").val();
+
+        if (!description) {
+            alert("Vui lòng nhập mô tả.");
+            return;
+        }
+
+        dataForm.append("description", description);
+
+        jQuery.ajax({
+            url: "/wp-json/api/v1/create-contest",
+            type: "post",
+            data: dataForm,
+            processData: false,
+            contentType: false,
+            success: function (data, textStatus) {
+                submitClick = true;
+                Swal.fire(
+                    "Thông Báo.",
+                    "Bạn đã nộp bài dự thi thành công, bài của bạn đang chờ duyệt.",
+                    "success"
+                ).then(function () {
+                    window.location.reload();
+                });
+            },
+            error: function (jqXhr, textStatus, errorThrown) {
+                console.log(errorThrown);
+            },
+        });
+    });
+});
+
+function DataURIToBlob(dataURI) {
+    const splitDataURI = dataURI.split(",");
+    const byteString =
+        splitDataURI[0].indexOf("base64") >= 0
+            ? atob(splitDataURI[1])
+            : decodeURI(splitDataURI[1]);
+    const mimeString = splitDataURI[0].split(":")[1].split(";")[0];
+
+    const ia = new Uint8Array(byteString.length);
+    for (let i = 0; i < byteString.length; i++)
+        ia[i] = byteString.charCodeAt(i);
+
+    return new Blob([ia], { type: mimeString });
+}
+

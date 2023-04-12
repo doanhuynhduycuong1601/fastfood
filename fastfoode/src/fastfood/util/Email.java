@@ -31,7 +31,7 @@ public class Email {
     public static void sendEmail(String content, String text, String title) {
         try {
             String user = "doanhuynhduycuong16011601@gmail.com";
-            String pass = "ghhnobgajhmiathp";
+            String pass = "qmqnzbwirzjvttiv";
             Properties prop = new Properties();
             prop.put("mail.smtp.host", "smtp.gmail.com");
             prop.put("mail.smtp.port", "465");

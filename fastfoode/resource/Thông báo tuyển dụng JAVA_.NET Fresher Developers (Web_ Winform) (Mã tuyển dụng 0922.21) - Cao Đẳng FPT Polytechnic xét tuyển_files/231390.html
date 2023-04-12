@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://form.antsomi.com/publish-form/231390 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>form publish</title><style type="text/css">@font-face {
+    font-family: 'icon-ants';
+    src: url('https://st-form.ants.tech/fonts/icon-ants.eot?pl39qz');
+    src: url('https://st-form.ants.tech/fonts/icon-ants.eot?pl39qz#iefix') format("embedded-opentype"), url('https://st-form.ants.tech/fonts/icon-ants.ttf?pl39qz') format("truetype"), url('https://st-form.ants.tech/fonts/icon-ants.woff?pl39qz') format("woff"), url('https://st-form.ants.tech/fonts/icon-ants.svg?pl39qz#icon-ants') format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+</style><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./icon-ants.css"><link rel="stylesheet" href="./bootstrap.min(1).css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link rel="stylesheet" href="./datepicker.min.css"><script src="./moment.min.js.tải xuống" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="./datepicker.min.js.tải xuống"></script></head><body><script>SITE_URL = "form.antsomi.com/564888751"
+API_HOST = "//form.antsomi.com/api/"
+API_HOST_V3 = ""
+API_LOGGING = ""
+API_LOGGING_ERROR = ""
+API_ID = "564888751"
+PROJECT_ID = ""
+U_OGS = "uogs_564888751"
+AUTH_ADX_DOMAIN = "//iam.ants.tech/"
+ST_OGS = ""
+UPLOAD_URL = "/data/cloud/ads"
+LOGO_MAIN = ""
+LOGO_SUB = ""
+ASSETS_URL = "//st-form.ants.tech/assets"
+APPLICATION_ENV = "production"
+SUBMISSION_API = "//submission-form.antsomi.com/"
+PAGEVIEW_API = "//pageview-form.antsomi.com/"
+PERMISSION_DOMAIN = "//permission.antsomi.com"
+STATIC_DOMAIN = "//st-form.ants.tech"
+C0_DOMAIN = "//c0-form.ants.tech"
+APP_CODE = "APP_MARKETING"
+THEME = "antsomi"
+ST_PLATFORM = "//st-platform.ants.tech"
+LOGIN_URL = "//permission.antsomi.com/564888751#/login?continue=https%3A%2F%2Fform.antsomi.com%2F564888751"
+LOGOUT_URL = "//permission.antsomi.com/564888751#/logout?continue=https%3A%2F%2Fform.antsomi.com%2F564888751"
+PROFILE_URL = "//permission.antsomi.com/564888751#/account/profile/"</script><div id="root"><div class="container">
+<script>
+        window.postMessageTo3rd = (eventDataConfig) => {
+            try {
+
+                const urlParams = new URL(window.location.href);
+
+                window.onmessage = (event) => {
+                    let data = event.data;
+                    let eventType = data.eventType || '';
+                    const {formId, networkId} = data;
+        
+                    if (eventType && eventType === 'submit' && formId && networkId) {
+                        let form = Object.assign({}, data);
+                        
+                        if (eventDataConfig && eventDataConfig.length) {
+                            for(let i=0; i<eventDataConfig.length; i++) {
+                                const {eventCate, eventAction, eventData} = eventDataConfig[i];
+                                
+                                let items = eventData.items || [];
+                                let extra = eventData.extra || {};
+                                let postData = {
+                                    items: [],
+                                    extra: {}
+                                };
+            
+                                for (let item of items) {
+                                    let postDataObject = {};
+                                    for (let [key, value] of Object.entries(item)) {
+                                        
+                                        for (const [keyData, valueData] of Object.entries(data)) {
+                                            const regex = new RegExp("{{form." + keyData + "}}", "g");
+                                    
+                                            value = value.replace(regex, valueData);
+                                        }
+
+                                        urlParams.searchParams.forEach((valueQuery, keyQuery) => {
+                                            const regex = new RegExp("{{form." + keyQuery + "}}", "g");
+                                            value = value.replace(regex, valueQuery);
+                                        });
+                                        
+                                        const regexValidateReplace = /{{([\s\S]*)}}/g;
+
+                                        value = value.replace(regexValidateReplace, "");
+            
+                                        postDataObject[key] = value;
+                                    }
+            
+                                    postData.items.push(postDataObject);
+                                }
+                                
+                                if (extra && Object.entries(extra).length) {
+                                    let postDataObject = {};
+            
+                                    for (let [key, value] of Object.entries(extra)) {
+                                        
+                                        for (const [keyData, valueData] of Object.entries(data)) {
+                                            const regex = new RegExp("{{form." + keyData + "}}", "g");
+                                    
+                                            value = value.replace(regex, valueData);
+                                        }
+
+                                        urlParams.searchParams.forEach((valueQuery, keyQuery) => {
+                                            const regex = new RegExp("{{form." + keyQuery + "}}", "g");
+                                            value = value.replace(regex, valueQuery);
+                                        });
+                                        
+                                        const regexValidateReplace = /{{([\s\S]*)}}/g;
+
+                                        value = value.replace(regexValidateReplace, "");
+                                        
+                                        postDataObject[key] = value;
+                                    }
+            
+                                    postData.extra = postDataObject;
+                                }
+                
+                                let parent = window.parent;
+            
+                                if (parent) {
+                                    
+                                    fetch('https:' + SUBMISSION_API + 'submission', {
+                                        method: "POST",
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify({dataPostMessage: {...postData}})
+                                    });
+                                    
+                                    parent.postMessage({
+                                        eventChannel: 'cdp_tracking',
+                                        networkId,
+                                        formId,
+                                        eventCate: eventCate,
+                                        eventAction: eventAction,
+                                        eventData: postData
+                                    }, '*');                                }
+                            }
+                        }
+                    }
+                };
+                return true;
+            } catch (e) {
+                console.log('e', e);
+            }
+        }
+        </script>
+<div id="StyledWorkspace" style="height: 100%; margin: 0px 10px 0 0; padding: 0px 7px;">
+<div id="form-wrapper" class="container" style="background-image: none;background-color: #fff;background-repeat: no-repeat;background-size: 100% 100%;position: relative">
+<form id="at_form_231390"><div class="row">
+<div class="col-md" style="position: relative; width: 100%">
+<div style="pointer-events: auto">
+<div style="height: auto;">
+<div style="display: flex; visibility: hidden;position: relative;z-index: 2000; margin: 5px 0px;"></div>
+<div>
+<div id="StyledLabel_231391" class="styled_label" style="color: #333333;font-family: Arial;font-size: 14px;"><div style="display: inline-block;"><p>Họ Tên<span style="color:red;">&nbsp;*</span></p></div></div>
+<div id="StyledHelpText231391" class="styled_help_text" style=""></div>
+</div>
+<div>
+<input id="231391" name="231391" class="styled_input sharp" style="border-color: #d2d8d9" spellcheck="false" placeholder="" value="" oninput="onFieldInput(&#39;231391&#39;);">
+</div>
+<span id="StyledError_231391" class="styled_error" style="display: none;">This field is required</span>
+</div>
+</div>
+</div>
+</div><div class="row">
+<div class="col-md" style="position: relative; width: 100%">
+<div style="pointer-events: auto">
+<div style="height: auto;">
+<div style="display: flex; visibility: hidden;position: relative;z-index: 2000; margin: 5px 0px;"></div>
+<div>
+<div id="StyledLabel_231392" class="styled_label" style="color: #333333;font-family: Arial;font-size: 14px;"><div style="display: inline-block;"><p>Điện Thoại<span style="color:red;">&nbsp;*</span></p></div></div>
+<div id="StyledHelpText231392" class="styled_help_text" style=""></div>
+</div>
+<div>
+<input id="231392" name="231392" class="styled_input sharp" style="border-color: #d2d8d9" spellcheck="false" placeholder="" value="" oninput="onFieldInput(&#39;231392&#39;);">
+</div>
+<span id="StyledError_231392" class="styled_error" style="display: none;">This field is required</span>
+</div>
+</div>
+</div>
+</div><div class="row">
+<div class="col-md" style="position: relative; width: 100%">
+<div style="pointer-events: auto">
+<div style="height: auto;">
+<div style="display: flex; visibility: hidden;position: relative;z-index: 2000; margin: 5px 0px;"></div>
+<div>
+<div id="StyledLabel_231393" class="styled_label" style="color: #333333;font-family: Arial;font-size: 14px;"><div style="display: inline-block;">Email</div></div>
+<div id="StyledHelpText231393" class="styled_help_text" style=""></div>
+</div>
+<div>
+<input id="231393" name="231393" class="styled_input sharp" style="border-color: #d2d8d9" spellcheck="false" placeholder="" value="" oninput="onFieldInput(&#39;231393&#39;);">
+</div>
+<span id="StyledError_231393" class="styled_error" style="display: none;">This field is required</span>
+</div>
+</div>
+</div>
+</div><div class="row">
+<div class="col-md" style="position: relative; width: 100%">
+<div style="pointer-events: auto">
+<div style="height: auto;">
+<div style="display: flex; visibility: hidden;position: relative;z-index: 2000; margin: 5px 0px;"></div>
+<div>
+<div id="StyledLabel_231394" class="styled_label" style="color: #333333;font-family: Arial;font-size: 14px;"><div style="display: inline-block;"><p>Cơ Sở<span style="color:red;">&nbsp;*</span></p></div></div>
+<div id="StyledHelpText231394" class="styled_help_text" style=""></div>
+</div>
+<div id="231394" class="styled_dropdown" style="font-family: Arial" data-value="">
+<button id="toggle_button:231394" class="dropdown-toggle" type="button" onclick="toggleDropdown(&#39;dropdown_menu:231394&#39;, &#39;toggle_button:231394&#39;)">
+<div id="label:231394">
+Select Option
+</div>
+</button>
+<div id="dropdown_menu:231394" class="dropdown-item" style="overflow: hidden auto;padding: 0;cursor: pointer;outline: 0;border: 1px solid rgb(210, 216, 217);box-shadow: rgb(0 0 0/30%) 0 1px 3px;width: 100%;position: absolute;will-change: transform;transform: translate3d(0px, -58px, 0px);">
+<button id="item:231394:0" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Hà Nội&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:0&#39;);">
+<div>Hà Nội</div>
+</button>
+<button id="item:231394:1" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Hải Phòng&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:1&#39;);">
+<div>Hải Phòng</div>
+</button>
+<button id="item:231394:2" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Hà Nam&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:2&#39;);">
+<div>Hà Nam</div>
+</button>
+<button id="item:231394:3" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Thanh Hoá&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:3&#39;);">
+<div>Thanh Hoá</div>
+</button>
+<button id="item:231394:4" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Đà Nẵng&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:4&#39;);">
+<div>Đà Nẵng</div>
+</button>
+<button id="item:231394:5" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Hồ Chí Minh&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:5&#39;);">
+<div>Hồ Chí Minh</div>
+</button>
+<button id="item:231394:6" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Quy Nhơn&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:6&#39;);">
+<div>Quy Nhơn</div>
+</button>
+<button id="item:231394:7" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Tây Nguyên&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:7&#39;);">
+<div>Tây Nguyên</div>
+</button>
+<button id="item:231394:8" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Cần Thơ&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:8&#39;);">
+<div>Cần Thơ</div>
+</button>
+<button id="item:231394:9" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Thái Nguyên&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:9&#39;);">
+<div>Thái Nguyên</div>
+</button>
+<button id="item:231394:10" class="dropdown-item " style="padding: 0 10px;" type="button" onclick="clickDropdownItem(&#39;231394&#39;, &#39;label:231394&#39;, &#39;Đồng Nai&#39;, &#39;&#39;, &#39;dropdown_menu:231394&#39;, &#39;item:231394:10&#39;);">
+<div>Đồng Nai</div>
+</button>
+</div>
+</div>
+<span id="StyledError_231394" class="styled_error" style="display: none;">This field is required</span>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; visibility: hidden;position: relative;z-index: 2000; margin: 5px 0px;"></div>
+<div style="display: flex; justify-content: left; margin-top: 10px;padding-bottom: 10px;">
+<button class="styled_button sharp" type="button" style="background-color: rgb(50, 67, 122); font-family: Arial; font-size: 14px; color: #fff; pointer-events: auto">
+Tư vấn ngay
+</button>
+</div>
+<script>
+                try{
+                
+const atForm = document.getElementById('at_form_231390');
+		const submit = document.getElementsByClassName('styled_button')[0];
+		const phoneNumber = document.getElementById('231392');
+		const email = document.getElementById('231393');
+
+		function addTextError(node, id, text) {
+			if (!document.getElementById(id)) {
+				const errorText = document.createElement("span");
+				errorText.setAttribute('id', id);
+				errorText.setAttribute('class', 'styled_error');
+				errorText.textContent=text;
+
+				node.parentNode.appendChild(errorText);
+			}
+		}
+
+		if (atForm) {
+			submit.removeAttribute('onClick');
+
+			const idTextError = 'StyledError_231392_phone';
+			const idTextEmailError = 'StyledError_231393_email';
+
+			submit.addEventListener('click', (e) => {
+				e.preventDefault();
+				e.stopPropagation();
+
+				const regex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+				const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+				let isValidPhone = false;
+				let isValidEmail = false;
+
+				if (regexEmail.test(email.value)) {
+					const errorEle = document.getElementById(idTextEmailError);
+
+					if (errorEle && errorEle.parentNode) {
+						errorEle.parentNode.removeChild(errorEle);
+					}
+
+					isValidEmail = true;
+				} else {
+					const error = document.getElementById('StyledError_231393');
+					addTextError(error, 'StyledError_231393_email', 'Email Invalid');
+				}
+
+				if (regex.test(phoneNumber.value)) {
+					const errorEle = document.getElementById(idTextError);
+					
+					if (errorEle && errorEle.parentNode) {
+						errorEle.parentNode.removeChild(errorEle);
+					}
+
+					isValidPhone = true;
+				} else {
+					const error = document.getElementById('StyledError_231392');
+					addTextError(error, 'StyledError_231392_phone', 'Phone Invalid');
+				}
+
+				if (isValidPhone && isValidEmail) {
+					if (window && window.onSubmit && typeof window.onSubmit === 'function') {
+						window.onSubmit();	
+					}
+				}
+				
+			});
+		}
+
+var eventData = [
+        {
+            eventCate: 'User',
+            eventAction: 'dang_ky',
+            eventData: {
+                items: [{
+                    type: "lead",
+                    lead_event: "User đăng ký",
+                    lead_locate: window.location.href,
+                    name: '{{form.last_name}}',
+                    email: '{{form.email}}',
+                    Phone: '{{form.phone_number}}',
+                    location: '{{form.co_so}}',
+                }],
+                extra: {
+                    identify_event: "User đăng ký",
+                    lead_locate: window.location.href,
+                    name: '{{form.last_name}}',
+                    email: '{{form.email}}',
+                    Phone: '{{form.phone_number}}',
+                    location: '{{form.co_so}}',
+                }
+            }
+        },
+        {
+            eventCate: 'User',
+            eventAction: 'dang_ky',
+            eventData: {
+                extra: {
+                    name: '{{form.last_name}}',
+                    Phone: '{{form.phone_number}}',
+                    location: '{{form.co_so}}',
+                    email: '{{form.email}}',
+                    customer_id: '{{form.phone_number}}',
+                    customer_name: '{{form.last_name}}',
+                    cdp_update_mode: 'insert',
+                    lead_source: "Đăng Kí Online",
+                }
+            }
+        }
+    ];
+
+    window.postMessageTo3rd(eventData);
+
+            }catch(error){console.log(error)}
+
+                function clickDropdownItem(fieldId, fieldLabelId, fieldLabel, fieldKey = '', dropdownMenuId, dropdownItemId) {
+                    document.getElementById(fieldLabelId).innerHTML = fieldLabel;
+                    document.getElementById(dropdownMenuId).classList.remove('show');
+                    document.querySelectorAll('button.dropdown-item').forEach(node => {
+                        if (node.id.indexOf(fieldId) > -1) {
+                            node.classList.remove('selected');
+                        }
+                    });
+                   
+                    document.getElementById(dropdownItemId).classList.add('selected');
+                    
+                    const fieldElement = document.getElementById(fieldId);                   
+                    if (fieldLabel) {
+                        fieldElement.dataset.value = fieldLabel;
+                    }
+                    
+                    if (fieldKey) {
+                        fieldElement.dataset.key = fieldKey;
+                    }
+                                       
+                    const errorElement = document.getElementById('StyledError_' + fieldId);
+                    if (errorElement) {
+                        errorElement.style.display = 'none';   
+                    }                    
+                }
+            
+                function clickNumberUp(fieldId, isSetNumberLimit) {
+                    const fieldContainer = document.getElementById(fieldId);
+                    
+                    if (!isSetNumberLimit || !fieldContainer.max || fieldContainer.value + 1 <= fieldContainer.max) {
+                        fieldContainer.value++;
+                    }
+                }
+                
+                function clickNumberDown(fieldId, isSetNumberLimit) {
+                    const fieldContainer = document.getElementById(fieldId);
+                    
+                    if (!isSetNumberLimit || !fieldContainer.min || fieldContainer.value - 1 >= fieldContainer.min) {
+                        fieldContainer.value--;
+                    }
+                }
+                
+                function onFieldInput(fieldId) {
+                    const errorContainer = document.getElementById('StyledError_' + fieldId);
+                   
+                    if (errorContainer) {
+                        errorContainer.style.display = 'none';
+                    }
+                }
+                
+                function onSubmit() {
+                    event.preventDefault();
+                    
+
+        function removeTags(str) {
+            if ((str===null) || (str===''))
+                return false;
+            else
+                str = str.toString();
+                
+            // Regular expression to identify HTML tags in 
+            // the input string. Replacing the identified 
+            // HTML tag with a null string.
+            return str.replace( /(<([^>]+)>)/ig, '');
+        }
+
+        const data = {};
+        const dataEvent = {};
+        let valid = true;
+        let dataField;
+    data[231391] = removeTags(document.getElementById(231391).value);dataEvent['last_name'] = removeTags(document.getElementById(231391).value);
+                            if (!data[231391]) {
+                                valid = false;
+                                // show error message
+                                document.getElementById('StyledError_231391').style.display = 'block';
+                            }
+                        data[231392] = removeTags(document.getElementById(231392).value);dataEvent['phone_number'] = removeTags(document.getElementById(231392).value);
+                            if (!data[231392]) {
+                                valid = false;
+                                // show error message
+                                document.getElementById('StyledError_231392').style.display = 'block';
+                            }
+                        data[231393] = removeTags(document.getElementById(231393).value);dataEvent['email'] = removeTags(document.getElementById(231393).value);data[231394] = document.getElementById(231394).dataset.value && document.getElementById(231394).dataset.value.split(',');dataEvent['co_so'] = document.getElementById(231394).dataset.value && document.getElementById(231394).dataset.value.split(',');
+                            if (!data[231394]) {
+                                valid = false;
+                                // show error message
+                                document.getElementById('StyledError_231394').style.display = 'block';
+                            }
+                        
+        if (valid) {
+            data.network_id = API_ID;
+            data.form_id = 231390;
+
+            dataEvent.networkId = parseInt(API_ID);
+            dataEvent.formId = 231390;
+            
+            // subbmit
+            fetch('https:' + SUBMISSION_API + 'submission', {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(res => res.json())
+            .then(json => {
+                if (json && json.data && json.data.result) {
+                    // post event 
+                    dataEvent.eventType = 'submit';
+                    window.postMessage(dataEvent, '*');
+                    // redirect page
+                    if (0 === 1) {
+                        // redirect
+                        window.location.href = '<p>Cảm ơn bạn đã đăng ký thông tin!</p>';
+                    } else {
+                        // show message 
+                        document.getElementById('root').innerHTML = '<div class="container"><div class="row d-flex justify-content-center"><h2 class="center"><p>Cảm ơn bạn đã đăng ký thông tin!</p></h2></div></div>';
+                    }
+                }
+                
+            })
+            .catch(err => console.error(err));
+        }
+    
+                }
+
+                function trackingPageView(args) {
+                    try {
+                        const {
+                            networkId,
+                            formId
+                        } = args;
+                
+                        if (!networkId || !formId) {
+                            return;
+                        }
+                
+                        fetch('https:' + PAGEVIEW_API + 'page-view', {
+                            method: "POST",
+                            body: JSON.stringify({
+                                form_id: formId,
+                                network_id: networkId,
+                                user_agent: navigator.userAgent,
+                                referer: document.referer,
+                                resolution: screen.width + 'x' + screen.height
+                            })
+                        });
+
+                    } catch (error) {
+                        //
+                    }
+                };
+
+                trackingPageView({
+                    networkId: API_ID,
+                    formId: 231390
+                });
+                
+                function toggleDatePicker(datepickerId, toggleButtonId) {
+                    const toggleButtonElement = document.getElementById(toggleButtonId);
+                    const datepickerElement = document.getElementById(datepickerId);
+                    
+                    if (datepickerElement.classList.contains('show')) {
+                        datepickerElement.classList.remove('show');
+                        datepickerElement.classList.add('hide');
+                    } else {
+                        datepickerElement.classList.remove('hide');
+                        datepickerElement.classList.add('show');
+                        
+                        setTimeout(function() {
+                            window.addEventListener('click', function(e) {
+                                if (e.target && e.target.classList && e.target.classList.contains('datepicker-cell')) {
+                                    return;
+                                }
+                                
+                                if(!datepickerElement.contains(e.target) && !toggleButtonElement.contains(e.target)) {
+                                    datepickerElement.classList.remove('show');
+                                    datepickerElement.classList.add('hide');
+                                }
+                            });
+                        }, 100);
+                    }                                                                                                                            
+                }
+                
+                function toggleDropdown(dropdownMenuId, toggleButtonId) {
+                    const toggleButtonElement = document.getElementById(toggleButtonId);
+                    const dropdownElement = document.getElementById(dropdownMenuId);
+                    
+                    dropdownElement.classList.add('show');
+                    setTimeout(function() {
+                        window.addEventListener('click', function(e) {
+                            if(!dropdownElement.contains(e.target) && !toggleButtonElement.contains(e.target)) {
+                                dropdownElement.classList.remove('show');
+                            }
+                        });
+                    }, 100);
+                }       
+            </script>
+</form>
+</div>
+</div>
+</div></div></body></html>

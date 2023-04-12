@@ -1,0 +1,128 @@
+jQuery(document).ready(function () {
+	jQuery('#slug-category-contest').on('change',(event) => {
+	 wp.editor.remove('editor-contest');
+	 let elementContentField = jQuery("#content-contest-field");
+	 let dataForm = new FormData();
+	 dataForm.append('action', 'get_data_form');
+	 dataForm.append('name', event.target.value);
+	 jQuery.ajax({
+            url: '/wp-admin/admin-ajax.php',
+            type: "post",
+            data: dataForm,
+            processData: false,
+            contentType: false,
+            success: function (data, textStatus) {
+				let formatData = JSON.parse(data);
+				jQuery("#content-contest").show();
+				jQuery("#submit-contest").show();
+                elementContentField.html('');
+	 			elementContentField.html(`<input type="hidden" id="category-contest" value="${event.target.value}"><label for="name">
+                    <input name="name" type="checkbox" id="name" value="1" ${formatData.name ? "checked" : ''}>
+                    Họ và tên
+                </label>
+                <br>
+                <label for="phone">
+                    <input name="phone" type="checkbox" id="phone" value="1" ${formatData.phone ? "checked" : ''}>
+                    Số điện thoại
+                </label>
+                <br>
+                <label for="email">
+                    <input name="email" type="checkbox" id="email" value="1" ${formatData.email ? "checked" : ''}>
+                    Email
+                </label>
+                <br>
+                <label for="code">
+                    <input name="code" type="checkbox" id="code" value="1" ${formatData.code ? "checked" : ''}>
+                    Mã sinh viên
+                </label>
+                <br>
+                <label for="facebook">
+                    <input name="facebook" type="checkbox" id="facebook" value="1" ${formatData.facebook ? "checked" : ''}>
+                    Link Facebook
+                </label>
+                <br>
+                <label for="school">
+                    <input name="school" type="checkbox" id="school" value="1" ${formatData.school ? "checked" : ''}>
+                    Trường THPT
+                </label>
+                <br>
+                <label for="city">
+                    <input name="city" type="checkbox" id="city" value="1" ${formatData.city ? "checked" : ''}>
+                    Tỉnh/Thành phố
+                </label>`);
+				jQuery("#title-contest").val(formatData.title);
+				jQuery("#frame-demo-contest").attr("src",formatData.frame);
+				jQuery("#editor-contest").text('');
+				jQuery("#editor-contest").text(formatData.description);
+				wp.editor.initialize('editor-contest', {
+					tinymce: {
+					  wpautop: true,
+					  plugins : 'charmap colorpicker compat3x directionality fullscreen hr image lists media paste tabfocus textcolor wordpress wpautoresize wpdialogs wpeditimage wpemoji wpgallery wplink wptextpattern wpview',
+					  toolbar1: 'bold italic underline strikethrough | bullist numlist | blockquote hr wp_more | alignleft aligncenter alignright | link unlink | fullscreen | wp_adv',
+					  toolbar2: 'formatselect alignjustify forecolor | pastetext removeformat charmap | outdent indent | undo redo | wp_help'
+					},
+					quicktags: true,
+					mediaButtons: true,
+      			});
+
+            },
+            error: function (jqXhr, textStatus, errorThrown) {
+                console.log(errorThrown);
+            },
+        });
+ 	});
+	
+	jQuery("#submit-contest").click(()=>{
+		let category = jQuery("#category-contest").val();
+		let name = jQuery("#name").is(":checked");
+		let phone = jQuery("#phone").is(":checked");
+		let email = jQuery("#email").is(":checked");
+		let code = jQuery("#code").is(":checked"); 
+		let facebook = jQuery("#facebook").is(":checked"); 
+		let school = jQuery("#school").is(":checked"); 
+		let city = jQuery("#city").is(":checked");
+		let title = jQuery("#title-contest").val();
+		let description = wp.editor.getContent("editor-contest");
+		let frame = jQuery("#frame-contest")[0].files[0];
+		
+		if(!title){
+			alert('Bạn phải nhập title!');
+			return;
+		}
+		if(!title){
+			alert('Bạn phải nhập description!');
+			return;
+		}
+		
+		let submitData = new FormData();
+		submitData.append('category', category);
+		submitData.append('name', name);
+		submitData.append('phone', phone); 
+		submitData.append('email', email); 
+		submitData.append('code', code); 
+		submitData.append('facebook', facebook); 
+		submitData.append('school', school); 
+		submitData.append('city', city); 
+		submitData.append('title', title);
+		submitData.append('description', description);
+		submitData.append('frame', frame);
+		submitData.append('action', 'handle_setting_contest');
+		jQuery.ajax({
+            url: '/wp-admin/admin-ajax.php',
+            type: "post",
+            data: submitData,
+            processData: false,
+            contentType: false,
+            success: function (data, textStatus) {
+				let response = JSON.parse(data);
+				if(response.success){
+					alert(response.success);
+					window.location.reload();
+				}
+            },
+            error: function (jqXhr, textStatus, errorThrown) {
+                console.log(errorThrown);
+            },
+        });
+	})
+});
